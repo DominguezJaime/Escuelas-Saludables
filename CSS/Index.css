@@ -1,0 +1,80 @@
+/* Estilos globales */
+* {
+  transition: all 0.25s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: steelblue;
+  background-image: url('../IMG/Index.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 80%;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+}
+
+/* Estilos para el título */
+h1 {
+  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o cualquier otra fuente que prefieras */
+  color: green; /* Cambia el color del texto a verde */
+  text-shadow: 2px 2px 4px white; /* Añade una sombra blanca */
+  font-size: 3em; /* Ajusta el tamaño de la fuente según tus necesidades */
+  text-align: center; /* Centra el texto */
+  margin-top: 20px; /* Añade un margen superior */
+}
+
+/* Estilos para el contenedor de módulos */
+#modulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los contenedores horizontalmente */
+  gap: 20px; /* Espacio entre los contenedores */
+  margin: 20px;
+}
+
+/* Estilos para cada contenedor */
+.contenedor {
+  display: flex;
+  flex-direction: row; /* Cambia a fila horizontal */
+  justify-content: center; /* Centra los módulos dentro del contenedor */
+  gap: 30px; /* Espacio entre los módulos */
+}
+
+/* Estilos para cada módulo */
+.modulo {
+  width: 250px; /* Aumenta el tamaño del módulo */
+  height: 250px; /* Aumenta el tamaño del módulo */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modulo img {
+  width: 220px; /* Aumenta el tamaño de la imagen */
+  height: 220px; /* Aumenta el tamaño de la imagen */
+  object-fit: contain; /* Ajusta para que la imagen no se recorte */
+  transition: transform 0.3s;
+}
+
+.modulo img:hover {
+  transform: scale(1.05);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+  #modulos {
+      flex-direction: column;
+      align-items: center;
+  }
+  .contenedor {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+}

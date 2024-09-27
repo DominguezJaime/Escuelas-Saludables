@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Modulo 3</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Modulos.css">
+    <link rel="stylesheet" href="../LIB/dist/sweetalert2.min.css">
+    <script defer src="../JS/Preguntas_M3.js"></script>
+    <script defer src="../JS/Modulos.js"></script>
+    <script src="../LIB/dist/sweetalert2.all.min.js"></script>
+    <meta property="og:site_name" content="Escuelas Saludables">
+    <meta property="og:title" content="Escuelas Saludables">
+</head>
+<body style="background-image: url('../IMG/Fondo3.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <audio id="correct-sound" src="../Audio/Correcta.mp3"></audio>
+    <audio id="incorrect-sound" src="../Audio/Incorrecta.mp3"></audio>
+    <audio id="final-score-sound" src="../Audio/Final.mp3"></audio>
+    <audio id="background-audio" src="../Audio/Modulo.mp3" autoplay loop muted></audio>
+<script>
+    document.getElementById('background-audio').muted = false;
+</script>
+
+
+    <div id="tablero-de-juego">
+        <div id="encabezado">
+            <br>
+            <span id="pregunta">Aquí va la pregunta</span>
+            <br>
+        </div>
+        <div class="opcion" id="opcion-1" onclick="seleccionarOpción(0)">
+            Opción 1
+        </div>
+        <div class="opcion" id="opcion-2" onclick="seleccionarOpción(1)">
+            Opción 2
+        </div>
+        <div class="opcion" id="opcion-3" onclick="seleccionarOpción(2)">
+            Opción 3
+        </div>
+        <div class="opcion" id="opcion-4" onclick="seleccionarOpción(3)">
+            Opción 4
+        </div>
+        <br>
+        <div id="icon-container">
+            <a id="homeLink" href="../index.html">
+                <img id="inicio" src="../IMG/Inicio.png" alt="Home">
+            </a>
+            <img id="volume-control" src="../IMG/Volumen.png" alt="Mute/Unmute">
+        </div>
+    </div>
+
+    <script>
+        function seleccionarOpción(opcion) {
+            // Aquí puedes agregar la lógica para manejar la selección de opciones
+            Swal.fire({
+                title: 'Opción seleccionada',
+                text: 'Has seleccionado la opción ' + (opcion + 1),
+                icon: 'info',
+                confirmButtonText: 'Aceptar'
+            });
+        }
+    </script>
+</body>
+</html>
