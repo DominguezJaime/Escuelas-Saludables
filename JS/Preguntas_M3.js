@@ -87,7 +87,7 @@
       "distractores": [
         "A) Hacer la sugerencia de usar los elementos de higiene.",
         "B) Recomendar la limpieza de manos.",
-        "B) No comprar en la tienda y llevar comida saludable de casa."
+        "C) No comprar en la tienda y llevar comida saludable de casa."
       ],
       "respuesta": "D) Todas las anteriores ."
     },

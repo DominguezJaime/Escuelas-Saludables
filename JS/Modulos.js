@@ -120,18 +120,18 @@ async function seleccionarOpcion(index) {
             text: `Tu puntaje fue de: ${puntaje}/${baseDePreguntas.length} (${porcentaje.toFixed(2)}%). ${mensaje}`,
         }).then(() => {
             // Guardar el progreso del módulo
-            guardarProgreso(numeroDeModulo, puntaje); // Usar la variable numeroDeModulo
+            guardarProgreso(numeroDeModulo, puntaje, baseDePreguntas.length); // Usar la variable numeroDeModulo
 
             // Obtener el nombre del jugador desde sessionStorage
             const nombreJugador = sessionStorage.getItem('nombreJugador');
 
-            // Redirigir a Resultados.html con el nombre del jugador y los puntajes
-            window.location.href = `../HTML/Resultados.html?nombre=${encodeURIComponent(nombreJugador)}&puntaje=${puntaje}&total=${baseDePreguntas.length}&modulo=${numeroDeModulo}`;
+            // Redirigir a index.html con el nombre del jugador y los puntajes
+            window.location.href = `../index.html?nombre=${encodeURIComponent(nombreJugador)}&puntaje=${puntaje}&total=${baseDePreguntas.length}&modulo=${numeroDeModulo}`;
         });
     }
 }
 
-// Función para guardar el progreso en sessionStorage
-function guardarProgreso(modulo, puntaje) {
-    sessionStorage.setItem(`modulo${modulo}`, JSON.stringify({ completado: true, puntaje: puntaje }));
+// Función para guardar el progreso en localStorage
+function guardarProgreso(modulo, puntaje, total) {
+    localStorage.setItem(`modulo${modulo}`, JSON.stringify({ completado: true, puntaje: puntaje, total: total }));
 }

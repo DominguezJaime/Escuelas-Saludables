@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const estado = JSON.parse(localStorage.getItem(`modulo${modulo}`));
         const estadoModuloElem = document.getElementById(`estado-modulo${modulo}`);
         if (estado && estado.completado) {
-            estadoModuloElem.innerText = `Completado - Puntaje: ${estado.puntaje}`;
+            const porcentaje = ((estado.puntaje / estado.total) * 100).toFixed(2);
+            estadoModuloElem.innerText = `Completado - Puntaje: ${porcentaje}%`;
             estadoModuloElem.style.display = 'block';
         } else {
             estadoModuloElem.innerText = 'No completado';

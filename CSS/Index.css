@@ -23,6 +23,14 @@ body {
   position: relative; /* Necesario para posicionar elementos absolutamente dentro del body */
 }
 
+#logo {
+  width: 80%;
+  height: auto;
+  max-width: 400px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+  display: block;
+  margin: 0 auto;
+}
+
 /* Estilos para el título */
 h1 {
   font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o cualquier otra fuente que prefieras */
@@ -32,74 +40,6 @@ h1 {
   text-align: center; /* Centra el texto */
   margin-top: 5px; /* Reduce el margen superior */
   margin-bottom: 5px; /* Reduce el margen inferior */
-}
-
-/* Estilos para el letrero del nombre del jugador */
-label[for="nombre-jugador"] {
-  font-size: 1.2em; /* Tamaño de letra más pequeño */
-  color: green; /* Color verde */
-  text-shadow: 1px 1px 2px white; /* Sombra para el texto */
-  margin-bottom: 3px; /* Reduce el espacio debajo del letrero */
-}
-
-/* Estilos para el campo de entrada del nombre del jugador */
-#nombre-jugador-input {
-  font-size: 0.9em; /* Tamaño de letra más pequeño */
-  padding: 3px; /* Reduce el espacio interno */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con transparencia */
-  border-radius: 10px; /* Bordes redondeados */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
-  color: black; /* Color del texto */
-  margin-bottom: 3px; /* Reduce el espacio debajo del campo de entrada */
-}
-
-/* Estilos para el botón de guardar nombre */
-button {
-  font-size: 0.9em; /* Tamaño de letra más pequeño */
-  padding: 3px 5px; /* Reduce el espacio interno */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con transparencia */
-  border-radius: 10px; /* Bordes redondeados */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
-  color: black; /* Color del texto */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
-}
-
-button:hover {
-  background-color: rgba(255, 255, 255, 1); /* Fondo más opaco al pasar el mouse */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-}
-
-/* Estilos para el nombre del jugador mostrado */
-#nombre-jugador-mostrado {
-  width: 250px; /* Tamaño del letrero */
-  display: flex; /* Utiliza flexbox para centrar el contenido */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  font-size: 1.2em; /* Tamaño de letra más pequeño */
-  color: green; /* Color verde */
-  text-shadow: 1px 1px 2px white; /* Sombra para el texto */
-  margin-top: 3px; /* Reduce el espacio superior */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
-  padding: 3px; /* Reduce el espacio interno */
-  border-radius: 10px; /* Bordes redondeados */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con transparencia */
-}
-
-/* Estilos para el letrero de bienvenida */
-#bienvenido {
-  width: 250px; /* Tamaño del letrero */
-  display: flex; /* Utiliza flexbox para centrar el contenido */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  font-size: 1.2em; /* Tamaño de letra más pequeño */
-  color: green; /* Color verde */
-  text-shadow: 1px 1px 2px white; /* Sombra para el texto */
-  margin-top: 3px; /* Reduce el espacio superior */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
-  padding: 3px; /* Reduce el espacio interno */
-  border-radius: 10px; /* Bordes redondeados */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con transparencia */
 }
 
 /* Estilos para el contenedor de módulos */
@@ -151,7 +91,7 @@ button:hover {
   border: 1px solid #ccc; /* Ajusta el borde según el estilo de las opciones */
   padding: 3px; /* Reduce el padding */
   border-radius: 5px; /* Ajusta el radio del borde según el estilo de las opciones */
-  display: none; /* Inicialmente oculto */
+  display: block; /* Asegura que los contenedores sean visibles */
 }
 
 /* Estilos para el contenedor de iconos */
@@ -159,7 +99,6 @@ button:hover {
   display: flex;
   justify-content: space-between; /* Distribuye los iconos horizontalmente */
   width: 50%; /* Asegura que el contenedor ocupe todo el ancho disponible */
- 
 }
 
 /* Estilos para los iconos */
@@ -167,14 +106,13 @@ button:hover {
   width: 50px;
   height: 50px;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 #reiniciar {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  
 }
 
 /* Media query para pantallas más pequeñas */
@@ -186,5 +124,4 @@ button:hover {
   .contenedor {
       flex-direction: column; /* Cambia a columna en pantallas pequeñas */
   }
-  
 }

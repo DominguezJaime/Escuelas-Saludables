@@ -6,34 +6,40 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Escuelas Saludables</title>
     <link rel="stylesheet" href="CSS/Index.css">
+    <style>
+        .estado-modulo {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
+    <img src="IMG/Logo.png" alt="Logo de Escuelas Saludables" id="logo"> <!-- Imagen del logo -->
     <h1>Escuelas Saludables</h1>
-    <div>
-        <label for="nombre-jugador">Ingresa tu nombre:</label>
-        <input type="text" id="nombre-jugador-input" placeholder="(opcional)">
-        <button>Guardar</button>
-    </div>
-    <div id="nombre-jugador-mostrado"></div> <!-- Elemento para mostrar el nombre del jugador -->
     <div id="modulos">
         <div class="contenedor" id="contenedor1">
             <div class="modulo" id="modulo1">
                 <a href="HTML/Modulo1.html?modulo=1">
                     <img src="IMG/M1.png" alt="Manejo del Tiempo Libre">
                 </a>
-                <div class="estado-modulo" id="estado-modulo1"></div>
+                <div class="estado-modulo" id="estado-modulo1">No completado</div>
             </div>
             <div class="modulo" id="modulo2">
                 <a href="HTML/Modulo2.html?modulo=2">
                     <img src="IMG/M2.png" alt="Resolución de Conflictos">
                 </a>
-                <div class="estado-modulo" id="estado-modulo2"></div>
+                <div class="estado-modulo" id="estado-modulo2">No completado</div>
             </div>
             <div class="modulo" id="modulo3">
                 <a href="HTML/Modulo3.html?modulo=3">
                     <img src="IMG/M3.png" alt="Ambiental">
                 </a>
-                <div class="estado-modulo" id="estado-modulo3"></div>
+                <div class="estado-modulo" id="estado-modulo3">No completado</div>
             </div>
         </div>
         <div class="contenedor" id="contenedor2">
@@ -41,23 +47,36 @@
                 <a href="HTML/Modulo4.html?modulo=4">
                     <img src="IMG/M4.png" alt="Salud Nutricional">
                 </a>
-                <div class="estado-modulo" id="estado-modulo4"></div>
+                <div class="estado-modulo" id="estado-modulo4">No completado</div>
             </div>
             <div class="modulo" id="modulo5">
                 <a href="HTML/Modulo5.html?modulo=5">
                     <img src="IMG/M5.png" alt="Promoción y Protección de la Salud Mental">
                 </a>
-                <div class="estado-modulo" id="estado-modulo5"></div>
+                <div class="estado-modulo" id="estado-modulo5">No completado</div>
             </div>
         </div>
     </div>
-    <div id="icon-container">
-        <a href="HTML/Resultados.html">
-            <img id="resultados" src="IMG/Resultados.png" alt="Resultados">
-        </a>
-        <img id="reiniciar" src="IMG/Reiniciar.png" alt="Reiniciar" onclick="reiniciarLocalStorage()">
-    </div>
+    
+    <div id="resultados"></div> <!-- Elemento para mostrar los resultados -->
 
     <script src="JS/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nombreJugador = urlParams.get('nombre');
+            const puntaje = urlParams.get('puntaje');
+            const total = urlParams.get('total');
+            const modulo = urlParams.get('modulo');
+
+            if (nombreJugador && puntaje && total && modulo) {
+                const porcentaje = ((puntaje / total) * 100).toFixed(2);
+                const estadoModuloElem = document.getElementById(`estado-modulo${modulo}`);
+                if (estadoModuloElem) {
+                    estadoModuloElem.innerText = `Completado - Puntaje: ${porcentaje}%`;
+                }
+            }
+        });
+    </script>
 </body>
 </html>

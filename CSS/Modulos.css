@@ -30,6 +30,25 @@ body {
   padding: 10px;
 }
 
+#logo {
+  width: 80%;
+  height: auto;
+  max-width: 400px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para el título */
+h1 {
+  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o cualquier otra fuente que prefieras */
+  color: green; /* Cambia el color del texto a verde */
+  text-shadow: 2px 2px 4px white; /* Añade una sombra blanca */
+  font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+  text-align: center; /* Centra el texto */
+  margin-top: 1px; /* Reduce el margen superior */
+  margin-bottom: 1px; /* Reduce el margen inferior */
+}
+
 .opcion {
   width: 35vw; /* Ajusta el ancho del encabezado */
   height: auto; /* Ajusta la altura automáticamente */
