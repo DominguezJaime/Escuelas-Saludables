@@ -5,10 +5,10 @@
       "pregunta": "1. Una lonchera saludable debe llevar:",
       "distractores": [
         "A) Una bebida láctea y una harina.",
-        "B) Solo la respuesta A es correcta.",
-        "C) Ninguna de las anteriores."
+        "B) Una proteína y una fruta.",
+        "C) Solo la respuesta A es correcta."
       ],
-      "respuesta": "D) Una proteína y una fruta."
+      "respuesta": "D) Todas las anteriores."
     },
     {
       "pregunta": "2. En la Institución educativa se celebra el día saludable. ¿Qué alimento llevarías?",
@@ -23,46 +23,46 @@
       "pregunta": "3. El médico le dice a una estudiante que debe aumentar el consumo de vitaminas y minerales. ¿Qué grupo de alimentos debe escoger?",
       "distractores": [
         "A) Grasas.",
-        "B) Azúcares.",
-        "C) Harinas."
+        "C) Azúcares.",
+        "D) Harinas."
       ],
-      "respuesta": "D) Frutas y verduras."
+      "respuesta": "B) Frutas y verduras."
     },
     {
       "pregunta": "4. ¿Qué bebidas saludables se recomienda llevar en la lonchera o comprar en la tienda escolar?",
       "distractores": [
-        "A) Gaseosa.",
-        "B) Pony Malta.",
-        "C) Tampico."
+        "B) Gaseosa.",
+        "C) Pony Malta.",
+        "D) Tampico."
       ],
-      "respuesta": "D) Jugo natural o avena."
+      "respuesta": "A) Jugo natural o avena."
     },
     {
       "pregunta": "5. ¿Cuál de las siguientes opciones es un almuerzo saludable?",
       "distractores": [
         "A) Sopa de arroz + huevo + tajadas de plátano.",
-        "B) Arroz + salchicha + papa frita + jugo de caja.",
-        "C) Chicharrón + arroz + agua de panela."
+        "C) Arroz + salchicha + papa frita + jugo de caja.",
+        "D) Chicharrón + arroz + agua de panela."
       ],
-      "respuesta": "D) Frijoles + arroz + huevo + tajada de tomate + agua."
+      "respuesta": "B) Frijoles + arroz + huevo + tajada de tomate + agua."
     },
     {
       "pregunta": "6. Para la clase de ciencias debes mencionar cuál es la lonchera saludable:",
       "distractores": [
         "A) Paquete de papas + jugo de caja + mandarina.",
         "B) Limonada + pan.",
-        "C) Pan + queso + jugo de guayaba."
+        "D) Agua + croissant."
       ],
-      "respuesta": "D) Agua + croissant."
+      "respuesta": "C) Pan + queso + jugo de guayaba."
     },
     {
       "pregunta": "7. ¿Cuál sería un desayuno saludable?",
       "distractores": [
         "A) Cereal azucarado + leche.",
-        "B) Pan + agua de panela con leche.",
-        "C) Batido verde de pepino + espinaca."
+        "C) Pan + agua de panela con leche.",
+        "D) Batido verde de pepino + espinaca."
       ],
-      "respuesta": "D) Huevo + arepa + fruta + chocolate."
+      "respuesta": "B) Huevo + arepa + fruta + chocolate."
     },
     {
       "pregunta": "8. El consumo de una alimentación no saludable puede ocasionar:",
@@ -78,15 +78,15 @@
       "distractores": [
         "A) Yogur + galletas Oreo.",
         "B) Perro caliente con salsas + jugo natural.",
-        "C) Ningún combo es saludable."
+        "D) Ningún combo es saludable."
       ],
-      "respuesta": "D) Avena + galletas integrales."
+      "respuesta": "C) Avena + galletas integrales."
     },
     {
       "pregunta": "10. ¿Cuáles de los siguientes alimentos incluirías en una tienda escolar saludable?",
       "distractores": [
-        "A) Arepa con huevo sin salsas.",
-        "B) Tortas de lentejas.",
+        "A) Tortas de lentejas.",
+        "B) Arepa con huevo sin salsas.",
         "C) Panqueque de avena con fruta picada."
       ],
       "respuesta": "D) Todas las anteriores."

@@ -9,37 +9,55 @@
 </head>
 <body>
     <h1>Escuelas Saludables</h1>
+    <div>
+        <label for="nombre-jugador">Ingresa tu nombre:</label>
+        <input type="text" id="nombre-jugador-input" placeholder="(opcional)">
+        <button>Guardar</button>
+    </div>
+    <div id="nombre-jugador-mostrado"></div> <!-- Elemento para mostrar el nombre del jugador -->
     <div id="modulos">
         <div class="contenedor" id="contenedor1">
             <div class="modulo" id="modulo1">
-                <a href="HTML/Modulo1.html">
+                <a href="HTML/Modulo1.html?modulo=1">
                     <img src="IMG/M1.png" alt="Manejo del Tiempo Libre">
                 </a>
+                <div class="estado-modulo" id="estado-modulo1"></div>
             </div>
             <div class="modulo" id="modulo2">
-                <a href="HTML/Modulo2.html">
+                <a href="HTML/Modulo2.html?modulo=2">
                     <img src="IMG/M2.png" alt="Resolución de Conflictos">
                 </a>
+                <div class="estado-modulo" id="estado-modulo2"></div>
             </div>
             <div class="modulo" id="modulo3">
-                <a href="HTML/Modulo3.html">
+                <a href="HTML/Modulo3.html?modulo=3">
                     <img src="IMG/M3.png" alt="Ambiental">
                 </a>
+                <div class="estado-modulo" id="estado-modulo3"></div>
             </div>
         </div>
         <div class="contenedor" id="contenedor2">
             <div class="modulo" id="modulo4">
-                <a href="HTML/Modulo4.html">
+                <a href="HTML/Modulo4.html?modulo=4">
                     <img src="IMG/M4.png" alt="Salud Nutricional">
                 </a>
+                <div class="estado-modulo" id="estado-modulo4"></div>
             </div>
             <div class="modulo" id="modulo5">
-                <a href="HTML/Modulo5.html">
+                <a href="HTML/Modulo5.html?modulo=5">
                     <img src="IMG/M5.png" alt="Promoción y Protección de la Salud Mental">
                 </a>
+                <div class="estado-modulo" id="estado-modulo5"></div>
             </div>
         </div>
     </div>
-    
+    <div id="icon-container">
+        <a href="HTML/Resultados.html">
+            <img id="resultados" src="IMG/Resultados.png" alt="Resultados">
+        </a>
+        <img id="reiniciar" src="IMG/Reiniciar.png" alt="Reiniciar" onclick="reiniciarLocalStorage()">
+    </div>
+
+    <script src="JS/index.js"></script>
 </body>
 </html>

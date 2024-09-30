@@ -1,6 +1,7 @@
 /* Estilos globales */
 * {
   transition: all 0.25s;
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total de los elementos */
 }
 
 body {
@@ -14,10 +15,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
   font-size: 80%;
   flex-direction: column;
   font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+  overflow: hidden; /* Elimina el scroll */
+  position: relative; /* Necesario para posicionar elementos absolutamente dentro del body */
 }
 
 /* Estilos para el título */
@@ -25,9 +28,78 @@ h1 {
   font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o cualquier otra fuente que prefieras */
   color: green; /* Cambia el color del texto a verde */
   text-shadow: 2px 2px 4px white; /* Añade una sombra blanca */
-  font-size: 3em; /* Ajusta el tamaño de la fuente según tus necesidades */
+  font-size: 2.5em; /* Ajusta el tamaño de la fuente según tus necesidades */
   text-align: center; /* Centra el texto */
-  margin-top: 20px; /* Añade un margen superior */
+  margin-top: 5px; /* Reduce el margen superior */
+  margin-bottom: 5px; /* Reduce el margen inferior */
+}
+
+/* Estilos para el letrero del nombre del jugador */
+label[for="nombre-jugador"] {
+  font-size: 1.2em; /* Tamaño de letra más pequeño */
+  color: green; /* Color verde */
+  text-shadow: 1px 1px 2px white; /* Sombra para el texto */
+  margin-bottom: 3px; /* Reduce el espacio debajo del letrero */
+}
+
+/* Estilos para el campo de entrada del nombre del jugador */
+#nombre-jugador-input {
+  font-size: 0.9em; /* Tamaño de letra más pequeño */
+  padding: 3px; /* Reduce el espacio interno */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+  color: black; /* Color del texto */
+  margin-bottom: 3px; /* Reduce el espacio debajo del campo de entrada */
+}
+
+/* Estilos para el botón de guardar nombre */
+button {
+  font-size: 0.9em; /* Tamaño de letra más pequeño */
+  padding: 3px 5px; /* Reduce el espacio interno */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+  color: black; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 1); /* Fondo más opaco al pasar el mouse */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilos para el nombre del jugador mostrado */
+#nombre-jugador-mostrado {
+  width: 250px; /* Tamaño del letrero */
+  display: flex; /* Utiliza flexbox para centrar el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  font-size: 1.2em; /* Tamaño de letra más pequeño */
+  color: green; /* Color verde */
+  text-shadow: 1px 1px 2px white; /* Sombra para el texto */
+  margin-top: 3px; /* Reduce el espacio superior */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+  padding: 3px; /* Reduce el espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con transparencia */
+}
+
+/* Estilos para el letrero de bienvenida */
+#bienvenido {
+  width: 250px; /* Tamaño del letrero */
+  display: flex; /* Utiliza flexbox para centrar el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  font-size: 1.2em; /* Tamaño de letra más pequeño */
+  color: green; /* Color verde */
+  text-shadow: 1px 1px 2px white; /* Sombra para el texto */
+  margin-top: 3px; /* Reduce el espacio superior */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+  padding: 3px; /* Reduce el espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con transparencia */
 }
 
 /* Estilos para el contenedor de módulos */
@@ -35,8 +107,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra los contenedores horizontalmente */
-  gap: 20px; /* Espacio entre los contenedores */
-  margin: 20px;
+  margin: 5px; /* Reduce el margen */
+  overflow: hidden; /* Elimina el scroll */
 }
 
 /* Estilos para cada contenedor */
@@ -44,28 +116,65 @@ h1 {
   display: flex;
   flex-direction: row; /* Cambia a fila horizontal */
   justify-content: center; /* Centra los módulos dentro del contenedor */
-  gap: 30px; /* Espacio entre los módulos */
+  gap: 10px; /* Reduce el espacio entre los módulos */
 }
 
 /* Estilos para cada módulo */
 .modulo {
-  width: 250px; /* Aumenta el tamaño del módulo */
-  height: 250px; /* Aumenta el tamaño del módulo */
+  width: 200px; /* Reduce el tamaño del módulo */
+  height: 200px; /* Reduce el tamaño del módulo */
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center; /* Centrar el contenido del módulo */
+  margin-bottom: 5px; /* Reduce el espacio debajo de cada módulo */
+  display: inline-block; /* Asegurar que los módulos se alineen correctamente */
 }
 
 .modulo img {
-  width: 220px; /* Aumenta el tamaño de la imagen */
-  height: 220px; /* Aumenta el tamaño de la imagen */
+  width: 150px; /* Reduce el tamaño de la imagen */
+  height: 150px; /* Reduce el tamaño de la imagen */
   object-fit: contain; /* Ajusta para que la imagen no se recorte */
   transition: transform 0.3s;
 }
 
 .modulo img:hover {
   transform: scale(1.05);
+}
+
+.estado-modulo {
+  margin-top: 3px; /* Reduce el espacio superior */
+  font-size: 12px; /* Tamaño de letra más pequeño */
+  color: #333;
+  background-color: #f0f0f0; /* Ajusta el color de fondo según el estilo de las opciones */
+  border: 1px solid #ccc; /* Ajusta el borde según el estilo de las opciones */
+  padding: 3px; /* Reduce el padding */
+  border-radius: 5px; /* Ajusta el radio del borde según el estilo de las opciones */
+  display: none; /* Inicialmente oculto */
+}
+
+/* Estilos para el contenedor de iconos */
+#icon-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye los iconos horizontalmente */
+  width: 50%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+ 
+}
+
+/* Estilos para los iconos */
+#resultados {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center
+}
+
+#reiniciar {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  
 }
 
 /* Media query para pantallas más pequeñas */
@@ -77,4 +186,5 @@ h1 {
   .contenedor {
       flex-direction: column; /* Cambia a columna en pantallas pequeñas */
   }
+  
 }

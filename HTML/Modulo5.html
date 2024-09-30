@@ -19,48 +19,38 @@
     <audio id="incorrect-sound" src="../Audio/Incorrecta.mp3"></audio>
     <audio id="final-score-sound" src="../Audio/Final.mp3"></audio>
     <audio id="background-audio" src="../Audio/Modulo.mp3" autoplay loop muted></audio>
-<script>
-    document.getElementById('background-audio').muted = false;
-</script>
-
-
-    <div id="tablero-de-juego">
-        <div id="encabezado">
-            <br>
-            <span id="pregunta">Aquí va la pregunta</span>
-            <br>
-        </div>
-        <div class="opcion" id="opcion-1" onclick="seleccionarOpción(0)">
-            Opción 1
-        </div>
-        <div class="opcion" id="opcion-2" onclick="seleccionarOpción(1)">
-            Opción 2
-        </div>
-        <div class="opcion" id="opcion-3" onclick="seleccionarOpción(2)">
-            Opción 3
-        </div>
-        <div class="opcion" id="opcion-4" onclick="seleccionarOpción(3)">
-            Opción 4
-        </div>
-        <br>
-        <div id="icon-container">
-            <a id="homeLink" href="../index.html">
-                <img id="inicio" src="../IMG/Inicio.png" alt="Home">
-            </a>
-            <img id="volume-control" src="../IMG/Volumen.png" alt="Mute/Unmute">
-        </div>
-    </div>
-
     <script>
-        function seleccionarOpción(opcion) {
-            // Aquí puedes agregar la lógica para manejar la selección de opciones
-            Swal.fire({
-                title: 'Opción seleccionada',
-                text: 'Has seleccionado la opción ' + (opcion + 1),
-                icon: 'info',
-                confirmButtonText: 'Aceptar'
-            });
-        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('background-audio').muted = false;
+            const moduloNumero = 5; // Definir el número del módulo
+
+            // Obtener el nombre del jugador de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const nombreJugador = urlParams.get('nombre');
+            if (nombreJugador) {
+                localStorage.setItem('nombreJugador', nombreJugador);
+            }
+
+            // Guardar el número del módulo en localStorage
+            localStorage.setItem('moduloNumero', moduloNumero);
+        });
     </script>
+
+
+<div id="tablero-de-juego">
+    <div id="encabezado">
+        <br>
+        <span id="pregunta">Aquí va la pregunta</span>
+        <br>
+    </div>
+    <div id="opciones-container"></div> <!-- Contenedor para las opciones -->
+    <br>
+    <div id="icon-container">
+        <a id="homeLink" href="../index.html">
+            <img id="inicio" src="../IMG/Inicio.png" alt="Home">
+        </a>
+        <img id="volume-control" src="../IMG/Volumen.png" alt="Mute/Unmute">
+    </div>
+</div>
 </body>
 </html>

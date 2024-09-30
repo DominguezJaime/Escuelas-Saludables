@@ -14,51 +14,65 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Añadir el evento de clic para alternar el estado de mute
     volumeControl.addEventListener('click', () => {
-        if (backgroundAudio.muted) {
-            backgroundAudio.muted = false;
-            volumeControl.classList.remove('muted');
-        } else {
-            backgroundAudio.muted = true;
-            volumeControl.classList.add('muted');
-        }
+        backgroundAudio.muted = !backgroundAudio.muted;
+        volumeControl.classList.toggle('muted');
     });
+
+    // Obtener el nombre del jugador de la URL y guardarlo en sessionStorage
+    const urlParams = new URLSearchParams(window.location.search);
+    const nombreJugador = urlParams.get('nombre');
+    if (nombreJugador) {
+        sessionStorage.setItem('nombreJugador', nombreJugador);
+    }
+
+    // Guardar el número del módulo en sessionStorage
+    const moduloNumero = urlParams.get('modulo');
+    if (moduloNumero) {
+        sessionStorage.setItem('moduloNumero', moduloNumero);
+    }
+
+    // Cargar la primera pregunta
+    cargarPregunta(INDEX_PREGUNTA);
 });
 
 // Variables globales para el índice de la pregunta, puntaje e intentos
 let INDEX_PREGUNTA = 0;
 let puntaje = 0;
 let intentos = 0;
-
-// Cargar la primera pregunta
-cargarPregunta(INDEX_PREGUNTA);
+let numeroDeModulo = sessionStorage.getItem('moduloNumero'); // Obtener el número del módulo desde sessionStorage
 
 // Función para cargar una pregunta
 function cargarPregunta(index) {
-    objetoPregunta = baseDePreguntas[index];
+    const objetoPregunta = baseDePreguntas[index];
   
-    opciones = [...objetoPregunta.distractores];
-    opciones.push(objetoPregunta.respuesta);
-    for (let i = 0; i < 4; i++) {
-        opciones.sort();
-    }
+    // Ordenar las opciones en el orden A, B, C, D, E, F
+    let opciones = [objetoPregunta.respuesta, ...objetoPregunta.distractores];
+    opciones.sort((a, b) => a.charAt(0).localeCompare(b.charAt(0)));
   
     document.getElementById("pregunta").innerHTML = objetoPregunta.pregunta;
 
-    // Ocultar todos los botones primero
-    for (let i = 1; i <= 4; i++) {
-        document.getElementById(`opcion-${i}`).style.display = 'none';
-    }
+    // Eliminar todas las opciones existentes
+    const opcionesContainer = document.getElementById("opciones-container");
+    opcionesContainer.innerHTML = '';
 
-    // Mostrar solo los botones necesarios
+    // Crear y mostrar solo los botones necesarios en el orden A, B, C, D, E, F
     for (let i = 0; i < opciones.length; i++) {
-        document.getElementById(`opcion-${i + 1}`).style.display = 'block';
-        document.getElementById(`opcion-${i + 1}`).innerHTML = opciones[i];
+        const opcionElement = document.createElement('div');
+        opcionElement.className = 'opcion';
+        opcionElement.id = `opcion-${i + 1}`;
+        opcionElement.innerHTML = opciones[i];
+        opcionElement.onclick = () => seleccionarOpcion(i);
+        opcionesContainer.appendChild(opcionElement);
     }
 }
 
 // Función para manejar la selección de una opción
-async function seleccionarOpción(index) {
-    let validezRespuesta = opciones[index] == objetoPregunta.respuesta;
+async function seleccionarOpcion(index) {
+    const objetoPregunta = baseDePreguntas[INDEX_PREGUNTA];
+    const opciones = [objetoPregunta.respuesta, ...objetoPregunta.distractores];
+    opciones.sort((a, b) => a.charAt(0).localeCompare(b.charAt(0)));
+    const validezRespuesta = opciones[index] === objetoPregunta.respuesta;
+
     if (validezRespuesta) {
         var correctSound = document.getElementById('correct-sound');
         correctSound.play(); // Reproducir el sonido de respuesta correcta
@@ -104,9 +118,20 @@ async function seleccionarOpción(index) {
         await Swal.fire({
             title: "Juego terminado",
             text: `Tu puntaje fue de: ${puntaje}/${baseDePreguntas.length} (${porcentaje.toFixed(2)}%). ${mensaje}`,
+        }).then(() => {
+            // Guardar el progreso del módulo
+            guardarProgreso(numeroDeModulo, puntaje); // Usar la variable numeroDeModulo
+
+            // Obtener el nombre del jugador desde sessionStorage
+            const nombreJugador = sessionStorage.getItem('nombreJugador');
+
+            // Redirigir a Resultados.html con el nombre del jugador y los puntajes
+            window.location.href = `../HTML/Resultados.html?nombre=${encodeURIComponent(nombreJugador)}&puntaje=${puntaje}&total=${baseDePreguntas.length}&modulo=${numeroDeModulo}`;
         });
-        INDEX_PREGUNTA = 0;
-        puntaje = 0;
-        cargarPregunta(INDEX_PREGUNTA);
     }
+}
+
+// Función para guardar el progreso en sessionStorage
+function guardarProgreso(modulo, puntaje) {
+    sessionStorage.setItem(`modulo${modulo}`, JSON.stringify({ completado: true, puntaje: puntaje }));
 }

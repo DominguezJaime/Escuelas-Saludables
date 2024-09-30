@@ -18,8 +18,8 @@ body {
 }
 
 #encabezado {
-  width: 50vw; /* Ajusta el ancho del encabezado */
-  height: 100px;
+  width: 65vw; /* Ajusta el ancho del encabezado */
+  height: auto; /* Ajusta la altura automáticamente */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,17 +31,25 @@ body {
 }
 
 .opcion {
+  width: 35vw; /* Ajusta el ancho del encabezado */
+  height: auto; /* Ajusta la altura automáticamente */
   text-align: center;
-  width: 70vw; /* Ajusta el ancho de las opciones */
-  background: white;
+  flex-grow: 1; /* Permite que cada opción crezca equitativamente */
+  background: white; /* Fondo blanco */
   border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
+  margin: 10px; /* Espacio alrededor de cada opción */
+  padding: 10px 80px; /* Espacio interno a los lados */
   cursor: pointer;
+  color: black; /* Texto negro */
+  border: 2px solid transparent; /* Borde transparente por defecto */
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
 }
 
 .opcion:hover {
-  background: lightgray;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el mouse */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  background-color: #e0e0e0; /* Cambia el color de fondo */
+  border-color: #ccc; /* Cambia el color del borde */
 }
 
 .completado {
@@ -59,7 +67,6 @@ body {
   justify-content: center;
   width: 100%;
 }
-
 
 #icon-container {
   display: flex;
@@ -80,19 +87,15 @@ body {
   margin-right: 20px; /* Añade un margen derecho para separar los iconos */
 }
 
-#homeLink img {
-  width: 50px;
-  height: 50px;
-}
-
 #tablero-de-juego {
   display: flex;
   flex-direction: column;
   align-items: center; /* Alinea los elementos al centro del contenedor */
 }
 
-.opcion {
-  width: 80%; /* Asegura que las opciones ocupen todo el ancho disponible */
+#homeLink img {
+  width: 50px;
+  height: 50px;
 }
 
 #volume-control {
@@ -102,6 +105,6 @@ body {
   margin-left: 20px; /* Añade un margen izquierdo para separar los iconos */
 }
 
-muted {
+.muted {
   filter: grayscale(100%); /* Cambia el estilo de la imagen cuando está muteada */
 }

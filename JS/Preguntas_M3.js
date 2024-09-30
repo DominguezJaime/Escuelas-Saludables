@@ -14,10 +14,10 @@
       "pregunta": "2. ¿Cuál es la manera correcta de almacenar los residuos sólidos en el hogar?",
       "distractores": [
         "A) Caneca destapada en la cocina.",
-        "B) Caneca sin tapa en el baño.",
-        "C) Bolsa o estopa en el patio."
+        "C) Caneca sin tapa en el baño.",
+        "D) Bolsa o estopa en el patio."
       ],
-      "respuesta": "D) Caneca con tapa en un lugar aislado y ventilado."
+      "respuesta": "B) Caneca con tapa en un lugar aislado y ventilado."
     },
     {
       "pregunta": "3. ¿Qué utilidad se le puede dar al agua lluvia?",
@@ -33,36 +33,36 @@
       "distractores": [
         "A) 20 litros.",
         "B) 100 litros.",
-        "C) 50 litros."
+        "D) 50 litros."
       ],
-      "respuesta": "D) 5 litros."
+      "respuesta": "C) 5 litros."
     },
     {
       "pregunta": "5. ¿De dónde proviene la energía que consumimos en Pereira?",
       "distractores": [
         "A) Del viento.",
-        "B) De una máquina.",
-        "C) Del carbón."
+        "C) De una máquina.",
+        "D) Del carbón."
       ],
-      "respuesta": "D) Del agua."
+      "respuesta": "B) Del agua."
     },
     {
       "pregunta": "6. ¿Cómo podemos ahorrar energía cuando usamos la luz natural?",
       "distractores": [
         "A) Manteniendo las cortinas y persianas cerradas todo el día.",
-        "B) Encendiendo todas las luces de la casa para que esté más brillante.",
-        "C) Usando lámparas de mesa en lugar de abrir las ventanas."
+        "C) Encendiendo todas las luces de la casa para que esté más brillante.",
+        "D) Usando lámparas de mesa en lugar de abrir las ventanas."
       ],
-      "respuesta": "D) Usando la luz del sol durante el día y apagando las luces artificiales."
+      "respuesta": "B) Usando la luz del sol durante el día y apagando las luces artificiales."
     },
     {
       "pregunta": "7. ¿Qué pasa si arrojo la basura a la calle?",
       "distractores": [
         "A) Se genera empleo a quienes barren las calles.",
         "B) Los habitantes de calle pueden reciclar más fácil.",
-        "C) Sirve de alimento para los animales de compañía."
+        "D) Sirve de alimento para los animales de compañía."
       ],
-      "respuesta": "D) Los residuos llegan a los sumideros ocasionando taponamiento y contaminando las fuentes hídricas."
+      "respuesta": "C) Los residuos llegan a los sumideros ocasionando taponamiento y contaminando las fuentes hídricas."
     },
     {
       "pregunta": "8. ¿Qué pasa si los sumideros presentan taponamientos?",
@@ -76,26 +76,29 @@
     {
       "pregunta": "9. ¿Cuál es la función de los sumideros?",
       "distractores": [
-        "A) Almacenar los residuos de la calle.",
-        "B) Evitar que el agua lluvia se mezcle con el agua potable."
+        "A) Recibir y conducir el agua lluvia hacia los ríos.",
+        "B) Almacenar los residuos de la calle.",
+        "C) Evitar inundaciones en las calles."
       ],
-      "respuesta": "C) Recibir y conducir el agua lluvia hacia los ríos y evitar inundaciones en las calles."
+      "respuesta": "D) A y C son verdaderas ."
     },
     {
       "pregunta": "10. Si evidencio que los manipuladores de alimentos en la tienda escolar tienen joyas, esmalte en las uñas y no tienen tapabocas ni gorro, ¿qué puedo hacer?",
       "distractores": [
-        "A) Recomendar la limpieza de manos.",
+        "A) Hacer la sugerencia de usar los elementos de higiene.",
+        "B) Recomendar la limpieza de manos.",
         "B) No comprar en la tienda y llevar comida saludable de casa."
       ],
-      "respuesta": "C) Hacer la sugerencia de usar los elementos de higiene."
+      "respuesta": "D) Todas las anteriores ."
     },
     {
       "pregunta": "11. Si en mi tienda escolar venden solo paquetes y alimentos con muchas salsas, ¿qué debo hacer?",
       "distractores": [
         "A) Solicitar al tendero incluir alimentos saludables.",
-        "B) Comprar frutas."
+        "B) Comprar frutas.",
+        "C) No consumir alimentos con exceso de sal, grasas o azúcar."
       ],
-      "respuesta": "C) No consumir alimentos con exceso de sal, grasas o azúcar."
+      "respuesta": "D) Todas las anteriores ."
     }
   ];
 
