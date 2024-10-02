@@ -12,14 +12,14 @@
             border-radius: 10px;
             padding: 10px;
             text-align: center;
-            margin-top: 10px;
+            
             background-color: #f0f0f0;
             color: #333;
         }
     </style>
 </head>
 <body>
-    <img src="IMG/Logo.png" alt="Logo de Escuelas Saludables" id="logo"> <!-- Imagen del logo -->
+    <img src="IMG/Logo.png" alt="Logo de Escuelas Saludables" id="logo">
     <h1>Escuelas Saludables</h1>
     <div id="modulos">
         <div class="contenedor" id="contenedor1">
@@ -58,25 +58,46 @@
         </div>
     </div>
     
-    <div id="resultados"></div> <!-- Elemento para mostrar los resultados -->
+    <div id="icon-container">
+        <a href="HTML/Resultados.html">
+            <img id="resultados" src="IMG/Resultados.png" alt="Resultados">
+        </a>
+        <img id="reiniciar" src="IMG/Reiniciar.png" alt="Reiniciar">
+    </div>
 
     <script src="JS/index.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const urlParams = new URLSearchParams(window.location.search);
-            const nombreJugador = urlParams.get('nombre');
             const puntaje = urlParams.get('puntaje');
             const total = urlParams.get('total');
             const modulo = urlParams.get('modulo');
 
-            if (nombreJugador && puntaje && total && modulo) {
-                const porcentaje = ((puntaje / total) * 100).toFixed(2);
+            if (puntaje && total && modulo) {
+                const porcentaje = (puntaje / total) * 100;
                 const estadoModuloElem = document.getElementById(`estado-modulo${modulo}`);
                 if (estadoModuloElem) {
-                    estadoModuloElem.innerText = `Completado - Puntaje: ${porcentaje}%`;
+                    estadoModuloElem.innerText = `Tu Puntaje Fue: ${porcentaje === 100 ? porcentaje.toFixed(0) : porcentaje.toFixed(1)}%`;
+                }
+            }
+
+            // Cargar resultados guardados de localStorage
+            for (let i = 1; i <= 5; i++) {
+                const resultado = JSON.parse(localStorage.getItem(`modulo${i}`));
+                if (resultado) {
+                    const estadoModuloElem = document.getElementById(`estado-modulo${i}`);
+                    if (estadoModuloElem) {
+                        const porcentajeGuardado = (resultado.puntaje / resultado.total) * 100;
+                        estadoModuloElem.innerText = `Tu Puntaje Fue: ${porcentajeGuardado === 100 ? porcentajeGuardado.toFixed(0) : porcentajeGuardado.toFixed(1)}%`;
+                    }
                 }
             }
         });
+
+        function reiniciarLocalStorage() {
+            localStorage.clear();
+            location.reload(); // Recargar la página para actualizar los estados
+        }
     </script>
 </body>
 </html>

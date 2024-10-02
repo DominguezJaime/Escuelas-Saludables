@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Modulo 1</title>
+    <title>Módulo 1</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,22 +19,20 @@
     <audio id="incorrect-sound" src="../Audio/Incorrecta.mp3"></audio>
     <audio id="final-score-sound" src="../Audio/Final.mp3"></audio>
     <audio id="background-audio" src="../Audio/Modulo.mp3" autoplay loop muted></audio>
+
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById('background-audio').muted = false;
             const moduloNumero = 1; // Definir el número del módulo
 
-            // Obtener el nombre del jugador de la URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const nombreJugador = urlParams.get('nombre');
-            if (nombreJugador) {
-                localStorage.setItem('nombreJugador', nombreJugador);
-            }
-
             // Guardar el número del módulo en localStorage
             localStorage.setItem('moduloNumero', moduloNumero);
+
+            // Cargar la primera pregunta al cargar la página
+            cargarPregunta(INDEX_PREGUNTA);
         });
     </script>
+    
     <img src="../IMG/Logo.png" id="logo"> <!-- Imagen del logo -->
     <h1>Escuelas Saludables</h1>
 

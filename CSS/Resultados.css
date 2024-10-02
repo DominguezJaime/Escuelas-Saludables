@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../IMG/Final.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 90%;
+    height: auto;
+    max-width: 600px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+    display: block;
+    margin: 0 auto;
+}
+
+#felicitaciones {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mensaje-jugador {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: green; /* Cambiar el color a verde */
+    text-shadow: 0 0 10px #ffffff; /* Añadir un reflejo */
+}
+
+#resultados {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Añadir transparencia */
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-modulo {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#icon-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+#icon-container img {
+    width: 50px;
+    cursor: pointer;
+}

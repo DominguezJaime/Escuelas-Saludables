@@ -24,9 +24,9 @@ body {
 }
 
 #logo {
-  width: 80%;
+  width: 70%;
   height: auto;
-  max-width: 400px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+  max-width: 300px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
   display: block;
   margin: 0 auto;
 }
@@ -84,7 +84,6 @@ h1 {
 }
 
 .estado-modulo {
-  margin-top: 3px; /* Reduce el espacio superior */
   font-size: 12px; /* Tamaño de letra más pequeño */
   color: #333;
   background-color: #f0f0f0; /* Ajusta el color de fondo según el estilo de las opciones */
