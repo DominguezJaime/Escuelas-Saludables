@@ -1,16 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: url('../IMG/Final.jpg');
+    min-height: 100vh; /* Cambiado de height a min-height */
+    background-image: url('../IMG/Final.png'); /* Asegúrate de que la ruta sea correcta */
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* Asegura que el fondo se mantenga fijo */
 }
 
 header {
@@ -34,6 +34,7 @@ header {
     width: 80%;
     max-width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra el contenedor */
 }
 
 #mensaje-jugador {
@@ -51,6 +52,7 @@ header {
     width: 90%;
     max-width: 600px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra el contenedor */
 }
 
 .resultado-modulo {

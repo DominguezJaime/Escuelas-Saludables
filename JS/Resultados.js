@@ -30,27 +30,17 @@ function mostrarResultadosModulos() {
 }
 
 function generarPDF() {
-    const resultadosContainer = document.getElementById('felicitaciones'); // Selecciona el contenedor principal
+    const body = document.body; // Selecciona todo el cuerpo de la página
 
-    // Opciones para html2canvas
-    const canvasOptions = {
-        scale: 2,
-        useCORS: true,
-        logging: true,
-        backgroundColor: null,
-        foreignObjectRendering: true
+    // Opciones para html2pdf
+    const opt = {
+        margin: 1,
+        filename: 'ResultadosJuego.pdf',
+        image: { type: 'png', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true, backgroundColor: null },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
 
-    // Usar html2canvas para capturar la página como una imagen
-    html2canvas(resultadosContainer, canvasOptions).then(canvas => {
-        const imgData = canvas.toDataURL('image/jpeg', 0.98);
-        const { jsPDF } = window.jspdf;
-        const pdf = new jsPDF('p', 'mm', 'a4');
-        const imgProps = pdf.getImageProperties(imgData);
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
-        pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight);
-        pdf.save('ResultadosJuego.pdf');
-    });
+    // Usar html2pdf para generar el PDF de toda la página
+    html2pdf().from(body).set(opt).save();
 }
