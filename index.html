@@ -12,9 +12,104 @@
             border-radius: 10px;
             padding: 10px;
             text-align: center;
-            
             background-color: #f0f0f0;
             color: #333;
+        }
+
+        /* Estilos responsivos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #logo {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        #modulos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .modulo {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .modulo img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+        }
+
+        #icon-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        #icon-container a, #icon-container img {
+            margin: 0 10px;
+        }
+
+        #icon-container img {
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .modulo img {
+                max-width: 100px;
+            }
+
+            #icon-container img {
+                width: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+
+            .modulo img {
+                max-width: 80px;
+            }
+
+            #icon-container img {
+                width: 30px;
+            }
         }
     </style>
 </head>
@@ -62,7 +157,7 @@
         <a href="HTML/Resultados.html">
             <img id="resultados" src="IMG/Resultados.png" alt="Resultados">
         </a>
-        <img id="reiniciar" src="IMG/Reiniciar.png" alt="Reiniciar">
+        <img id="reiniciar" src="IMG/Reiniciar.png" alt="Reiniciar" onclick="reiniciarLocalStorage()">
     </div>
 
     <script src="JS/index.js"></script>
