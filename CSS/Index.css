@@ -16,7 +16,7 @@ body {
   font-size: 80%;
   flex-direction: column;
   font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
-  overflow: hidden; /* Elimina el scroll */
+  
   position: relative; /* Necesario para posicionar elementos absolutamente dentro del body */
 }
 
@@ -45,7 +45,7 @@ h1 {
   flex-direction: column;
   align-items: center; /* Centra los contenedores horizontalmente */
   margin: 5px; /* Reduce el margen */
-  overflow: hidden; /* Elimina el scroll */
+  
 }
 
 /* Estilos para cada contenedor */
@@ -60,7 +60,7 @@ h1 {
 .modulo {
   width: 200px; /* Reduce el tamaño del módulo */
   height: 200px; /* Reduce el tamaño del módulo */
-  overflow: hidden;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,4 +109,16 @@ h1 {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+  #modulos {
+      width: 80%;
+      flex-direction: column;
+      align-items: center;
+  }
+  .contenedor {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
 }
