@@ -118,3 +118,7 @@ h1 {
       flex-direction: column;
       align-items: center;
   }
+  .contenedor {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+}
