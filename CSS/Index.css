@@ -110,15 +110,3 @@ h1 {
   height: 50px;
   cursor: pointer;
 }
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 600px) {
-  #modulos {
-      width: 80%;
-      flex-direction: column;
-      align-items: center;
-  }
-  .contenedor {
-      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-  }
-}
