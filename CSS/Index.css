@@ -1,8 +1,6 @@
-/* Estilos globales */
 * {
   transition: all 0.25s;
-  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total de los elementos */
-}
+  }
 
 body {
   margin: 0;
@@ -15,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+  
   font-size: 80%;
   flex-direction: column;
   font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
