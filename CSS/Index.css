@@ -7,6 +7,11 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: steelblue;
+  background-image: url('../IMG/Index.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +28,7 @@ body {
   height: auto;
   max-width: 300px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
   display: block;
-  margin: 20px 0;
+  margin: 0 auto;
 }
 
 /* Estilos para el título */
@@ -96,7 +101,14 @@ h1 {
 }
 
 /* Estilos para los iconos */
-#resultados, #reiniciar {
+#resultados {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#reiniciar {
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -104,35 +116,11 @@ h1 {
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 600px) {
-  body {
-    font-size: 70%;
+  #modulos {
+      flex-direction: column;
+      align-items: center;
   }
-
-  #logo {
-    width: 90%;
-    max-width: 200px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  .modulo {
-    width: 150px;
-    height: 150px;
-  }
-
-  .modulo img {
-    width: 100px;
-    height: 100px;
-  }
-
-  #icon-container {
-    width: 80%;
-  }
-
-  #resultados, #reiniciar {
-    width: 40px;
-    height: 40px;
+  .contenedor {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
   }
 }
