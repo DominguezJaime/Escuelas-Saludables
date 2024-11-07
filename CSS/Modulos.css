@@ -18,8 +18,8 @@ body {
 }
 
 #encabezado {
-  width: 65vw; /* Ajusta el ancho del encabezado */
-  height: auto; /* Ajusta la altura automáticamente */
+  width: 65vw;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,44 +31,85 @@ body {
 }
 
 #logo {
-  width: 80%;
+  width: 90%;
   height: auto;
-  max-width: 400px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+  max-width: 700px;
   display: block;
   margin: 0 auto;
 }
 
-/* Estilos para el título */
 h1 {
-  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o cualquier otra fuente que prefieras */
-  color: green; /* Cambia el color del texto a verde */
-  text-shadow: 2px 2px 4px white; /* Añade una sombra blanca */
-  font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
-  text-align: center; /* Centra el texto */
-  margin-top: 1px; /* Reduce el margen superior */
-  margin-bottom: 1px; /* Reduce el margen inferior */
+  font-family: 'Arial', sans-serif;
+  color: green;
+  text-shadow: 2px 2px 4px white;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/* Contenedor de imágenes y opciones */
+#imagenes-y-opciones-container {
+  display: flex;
+  align-items: flex-start; /* Alinea en la parte superior */
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+  min-height: 350px; /* Ajuste de altura mínima general */
+}
+
+#imagen-izquierda,
+#imagen-derecha {
+  width: 200px; /* Ancho fijo para ambas imágenes */
+  height: 350px; /* Altura fija para ambas imágenes */
+  border-radius: 8px;
+  object-fit: cover; /* Ajusta para que la imagen llene el contenedor */
+  position: relative;
+}
+
+#imagen-izquierda {
+  margin-right: 60px; /* Espaciado entre imagen y opciones */
+}
+
+#imagen-derecha {
+  margin-left: 60px; /* Espaciado entre opciones y imagen */
+}
+
+/* Opciones de respuesta */
+#opciones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  min-width: 400px; /* Ancho mínimo para evitar colapsos */
+  min-height: 300px; /* Altura mínima para evitar que el contenedor se encoja */
+  width: auto; /* Permitir ajuste al contenido */
 }
 
 .opcion {
-  width: 35vw; /* Ajusta el ancho del encabezado */
-  height: auto; /* Ajusta la altura automáticamente */
+  width: 100%;
+  max-width: 300px; /* Limitar el ancho de las opciones */
+  height: auto;
   text-align: center;
-  flex-grow: 1; /* Permite que cada opción crezca equitativamente */
-  background: white; /* Fondo blanco */
+  background: white;
   border-radius: 10px;
-  margin: 10px; /* Espacio alrededor de cada opción */
-  padding: 10px 80px; /* Espacio interno a los lados */
+  margin: 10px;
+  padding: 10px 20px;
   cursor: pointer;
-  color: black; /* Texto negro */
-  border: 2px solid transparent; /* Borde transparente por defecto */
-  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+  color: black;
+  border: 2px solid transparent;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .opcion:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el mouse */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-  background-color: #e0e0e0; /* Cambia el color de fondo */
-  border-color: #ccc; /* Cambia el color del borde */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  background-color: #e0e0e0;
+  border-color: #ccc;
 }
 
 .completado {
@@ -89,9 +130,9 @@ h1 {
 
 #icon-container {
   display: flex;
-  justify-content: space-between; /* Distribuye los iconos horizontalmente */
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-  margin-top: 20px; /* Añade un margen superior para separar del contenido anterior */
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 
 #homeLink {
@@ -103,13 +144,14 @@ h1 {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  margin-right: 20px; /* Añade un margen derecho para separar los iconos */
+  margin-right: 20px;
 }
 
 #tablero-de-juego {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinea los elementos al centro del contenedor */
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 #homeLink img {
@@ -121,9 +163,9 @@ h1 {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  margin-left: 20px; /* Añade un margen izquierdo para separar los iconos */
+  margin-left: 20px;
 }
 
 .muted {
-  filter: grayscale(100%); /* Cambia el estilo de la imagen cuando está muteada */
+  filter: grayscale(100%);
 }

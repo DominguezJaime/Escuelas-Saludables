@@ -42,6 +42,10 @@ function cargarPregunta(index) {
         opcionElement.onclick = () => seleccionarOpcion(i);
         opcionesContainer.appendChild(opcionElement);
     }
+
+    // Actualizar imágenes
+    document.getElementById('imagen-izquierda').src = objetoPregunta.imagenIzquierda;
+    document.getElementById('imagen-derecha').src = objetoPregunta.imagenDerecha;
 }
 
 // Función para manejar la selección de una opción

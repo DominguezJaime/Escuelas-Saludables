@@ -8,8 +8,10 @@
         "C) Interés y empatía de las personas sobre un tema.",
         "D) Escuchar y buscar la solución."
       ],
-      "respuesta": "A) Los diferentes puntos de vista y desacuerdos."
-    },
+      "respuesta": "A) Los diferentes puntos de vista y desacuerdos.",
+      imagenIzquierda: "../IMG/M2P1-I.PNG",
+       imagenDerecha: "../IMG/M2P1-D.PNG"
+     },
     {
       "pregunta": "2. ¿Cuáles son los valores que debemos tener presentes en la resolución de conflictos?",
       "distractores": [
@@ -17,7 +19,9 @@
         "C) Verdad, honestidad, heroísmo, entusiasmo.",
         "D) Irrespeto, odio, desprecio y envidia."
       ],
-      "respuesta": "A) Respeto, empatía, diálogo, tolerancia, escucha asertiva."
+      "respuesta": "A) Respeto, empatía, diálogo, tolerancia, escucha asertiva.",
+      imagenIzquierda: "../IMG/M2P2-I.PNG",
+       imagenDerecha: "../IMG/M2P2-D.PNG"
     },
     {
       "pregunta": "3. ¿Qué es la empatía?",
@@ -26,7 +30,9 @@
         "C) Empacar regalos para una tía.",
         "D) Exclusión de sentimientos hacia otra persona."
       ],
-      "respuesta": "B) Capacidad de ponerse en el lugar del otro."
+      "respuesta": "B) Capacidad de ponerse en el lugar del otro.",
+      imagenIzquierda: "../IMG/M2P3-I.PNG",
+       imagenDerecha: "../IMG/M2P3-D.PNG"
     },
     {
       "pregunta": "4. ¿Qué debemos hacer cuando llegamos a un acuerdo?",
@@ -35,7 +41,9 @@
         "C) No cumplirlo.",
         "D) Deshacerse de inmediato."
       ],
-      "respuesta": "A) Respetarlo y cumplirlo."
+      "respuesta": "A) Respetarlo y cumplirlo.",
+      imagenIzquierda: "../IMG/M2P4-I.PNG",
+       imagenDerecha: "../IMG/M2P4-D.PNG"
     },
     {
       "pregunta": "5. ¿Quién o quiénes deben proponer soluciones?",
@@ -44,7 +52,9 @@
         "C) Las víctimas.",
         "D) Ninguna de las anteriores."
       ],
-      "respuesta": "A) Todos los involucrados en el conflicto."
+      "respuesta": "A) Todos los involucrados en el conflicto.",
+      imagenIzquierda: "../IMG/M2P5-I.PNG",
+       imagenDerecha: "../IMG/M2P5-D.PNG"
     },
     {
       "pregunta": "6. ¿Cuál de los siguientes puntos crees que es el primer paso para resolver un conflicto?",
@@ -53,7 +63,9 @@
         "B) No hablar nunca más con la otra persona que se tiene el conflicto.",
         "D) Buscar soluciones."
       ],
-      "respuesta": "C) Identificar el problema."
+      "respuesta": "C) Identificar el problema.",
+      imagenIzquierda: "../IMG/M2P6-I.PNG",
+       imagenDerecha: "../IMG/M2P6-D.PNG"
     },
     {
       "pregunta": "7. ¿Cuál de los siguientes puntos es una habilidad que ayuda a la solución de los conflictos?",
@@ -62,7 +74,9 @@
         "C) Generar envidia.",
         "D) Soledad."
       ],
-      "respuesta": "A) Ser colaborador."
+      "respuesta": "A) Ser colaborador.",
+      imagenIzquierda: "../IMG/M2P7-I.PNG",
+       imagenDerecha: "../IMG/M2P7-D.PNG"
     },
     {
       "pregunta": "8. De las siguientes formas, ¿cuál es la más saludable para enfrentar un conflicto?",
@@ -71,7 +85,9 @@
         "B) Ser rencoroso.",
         "C) Reaccionar con emociones intensas como enfadarse mucho, gritar, insultar, amenazar."
       ],
-      "respuesta": "D) Aprender a perdonar."
+      "respuesta": "D) Aprender a perdonar.",
+      imagenIzquierda: "../IMG/M2P8-I.PNG",
+       imagenDerecha: "../IMG/M2P8-D.PNG"
     }
   ]
 

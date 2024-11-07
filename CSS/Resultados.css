@@ -7,7 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* Cambiado de height a min-height */
-    background-image: url('../IMG/Final.png'); /* Asegúrate de que la ruta sea correcta */
+    background-image: url('../IMG/Index.jpg'); /* Asegúrate de que la ruta sea correcta */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Asegura que el fondo se mantenga fijo */
@@ -21,10 +21,10 @@ header {
 #logo {
     width: 90%;
     height: auto;
-    max-width: 600px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+    max-width: 700px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
     display: block;
     margin: 0 auto;
-}
+  }
 
 #felicitaciones {
     background-color: rgba(255, 255, 255, 0.9);

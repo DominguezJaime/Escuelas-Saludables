@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Módulo 1</title>
+    <title>Escuelas Saludables Módulo 1</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,17 +23,15 @@
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById('background-audio').muted = false;
-            const moduloNumero = 1; // Definir el número del módulo
+            const moduloNumero = 1;
 
-            // Guardar el número del módulo en localStorage
             localStorage.setItem('moduloNumero', moduloNumero);
 
-            // Cargar la primera pregunta al cargar la página
             cargarPregunta(INDEX_PREGUNTA);
         });
     </script>
-    
-    <img src="../IMG/Logo.png" id="logo"> <!-- Imagen del logo -->
+
+    <img src="../IMG/Logo.png" id="logo" alt="Logo de Escuelas Saludables">
     <h1>Escuelas Saludables</h1>
 
     <div id="tablero-de-juego">
@@ -42,8 +40,23 @@
             <span id="pregunta">Aquí va la pregunta</span>
             <br>
         </div>
-        <div id="opciones-container"></div> <!-- Contenedor para las opciones -->
+
+        <!-- Contenedor de imágenes y opciones -->
+        <div id="imagenes-y-opciones-container">
+            <!-- Imagen izquierda -->
+            <img id="imagen-izquierda" class="quiz-image" src="" alt="Imagen Izquierda" >
+            
+            <!-- Opciones en el centro -->
+            <div id="opciones-container">
+                <!-- Opciones se cargan dinámicamente aquí -->
+            </div>
+
+            <!-- Imagen derecha -->
+            <img id="imagen-derecha" class="quiz-image" src="" alt="Imagen Derecha" >
+        </div>
+
         <br>
+
         <div id="icon-container">
             <a id="homeLink" href="../index.html">
                 <img id="inicio" src="../IMG/Inicio.png" alt="Home">

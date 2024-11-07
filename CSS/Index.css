@@ -1,6 +1,6 @@
 * {
   transition: all 0.25s;
-  }
+}
 
 body {
   margin: 0;
@@ -12,67 +12,92 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   font-size: 80%;
   flex-direction: column;
-  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
-  
-  position: relative; /* Necesario para posicionar elementos absolutamente dentro del body */
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  overflow-x: hidden; /* Evita el scroll lateral */
 }
 
 #logo {
-  width: 70%;
+  width: 90%;
   height: auto;
-  max-width: 300px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+  max-width: 700px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
   display: block;
   margin: 0 auto;
 }
 
-/* Estilos para el título */
 h1 {
-  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o cualquier otra fuente que prefieras */
-  color: green; /* Cambia el color del texto a verde */
-  text-shadow: 2px 2px 4px white; /* Añade una sombra blanca */
-  font-size: 2.5em; /* Ajusta el tamaño de la fuente según tus necesidades */
-  text-align: center; /* Centra el texto */
-  margin-top: 5px; /* Reduce el margen superior */
-  margin-bottom: 5px; /* Reduce el margen inferior */
+  font-family: 'Arial', sans-serif;
+  color: green;
+  text-shadow: 2px 2px 4px white;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-/* Estilos para el contenedor de módulos */
 #modulos {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra los contenedores horizontalmente */
-  margin: 5px; /* Reduce el margen */
-  
+  align-items: center;
+  margin: 5px;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
-/* Estilos para cada contenedor */
 .contenedor {
   display: flex;
-  flex-direction: row; /* Cambia a fila horizontal */
-  justify-content: center; /* Centra los módulos dentro del contenedor */
-  gap: 10px; /* Reduce el espacio entre los módulos */
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px; /* Reduce el espacio entre los módulos */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  align-items: flex-end; /* Alinea los elementos al final del contenedor */
 }
 
-/* Estilos para cada módulo */
-.modulo {
-  width: 200px; /* Reduce el tamaño del módulo */
-  height: 200px; /* Reduce el tamaño del módulo */
-  
+#contenedor2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Centrar el contenido del módulo */
-  margin-bottom: 5px; /* Reduce el espacio debajo de cada módulo */
-  display: inline-block; /* Asegurar que los módulos se alineen correctamente */
+  gap: 20px;
+  width: 100%;
+  position: relative; /* Hacemos este contenedor relativo para colocar los iconos con posición absoluta */
+}
+
+#resultados, #reiniciar {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute; /* Los elementos se colocarán en la parte inferior */
+}
+
+#resultados {
+  bottom: 40px; /* Posiciona 'resultados' al fondo, ajusta el valor según sea necesario */
+  left: 300px;   /* Ajusta según donde quieras posicionarlo horizontalmente */
+}
+
+#reiniciar {
+  bottom: 40px; /* Posiciona 'reiniciar' al fondo, ajusta el valor según sea necesario */
+  right: 300px;  /* Ajusta según donde quieras posicionarlo horizontalmente */
+}
+
+
+.modulo {
+  width: 250px; /* Ajusta el tamaño del módulo */
+  height: 230px; /* Ajusta el tamaño del módulo */
+  display: flex;
+  flex-direction: column; /* Asegura que el contenido del módulo se alinee verticalmente */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5px;
+  display: inline-block;
+  
 }
 
 .modulo img {
-  width: 150px; /* Reduce el tamaño de la imagen */
-  height: 150px; /* Reduce el tamaño de la imagen */
-  object-fit: contain; /* Ajusta para que la imagen no se recorte */
+  width: 180px; /* Ajusta el tamaño de la imagen */
+  height: 180px; /* Ajusta el tamaño de la imagen */
+  object-fit: contain;
   transition: transform 0.3s;
 }
 
@@ -81,34 +106,14 @@ h1 {
 }
 
 .estado-modulo {
-  font-size: 12px; /* Tamaño de letra más pequeño */
+  font-size: 12px;
   color: #333;
-  background-color: #f0f0f0; /* Ajusta el color de fondo según el estilo de las opciones */
-  border: 1px solid #ccc; /* Ajusta el borde según el estilo de las opciones */
-  padding: 3px; /* Reduce el padding */
-  border-radius: 5px; /* Ajusta el radio del borde según el estilo de las opciones */
-  display: block; /* Asegura que los contenedores sean visibles */
-}
-
-/* Estilos para el contenedor de iconos */
-#icon-container {
-  display: flex;
-  justify-content: space-between; /* Distribuye los iconos horizontalmente */
-  width: 50%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-}
-
-/* Estilos para los iconos */
-#resultados {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-
-#reiniciar {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 1px;
+  border-radius: 5px;
+  display: block;
+  margin-top: auto; /* Alinea el texto al final del módulo */
 }
 
 /* Media query para pantallas más pequeñas */

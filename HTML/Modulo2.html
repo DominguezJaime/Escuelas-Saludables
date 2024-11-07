@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Modulo 2</title>
+    <title>Escuelas Saludables Modulo 2</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,36 +22,46 @@
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById('background-audio').muted = false;
-            const moduloNumero = 2; // Definir el número del módulo
+            const moduloNumero = 1;
 
-            // Obtener el nombre del jugador de la URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const nombreJugador = urlParams.get('nombre');
-            if (nombreJugador) {
-                localStorage.setItem('nombreJugador', nombreJugador);
-            }
-
-            // Guardar el número del módulo en localStorage
             localStorage.setItem('moduloNumero', moduloNumero);
+
+            cargarPregunta(INDEX_PREGUNTA);
         });
     </script>
-    <img src="../IMG/Logo.png" id="logo"> <!-- Imagen del logo -->
+
+    <img src="../IMG/Logo.png" id="logo" alt="Logo de Escuelas Saludables">
     <h1>Escuelas Saludables</h1>
 
-<div id="tablero-de-juego">
-    <div id="encabezado">
+    <div id="tablero-de-juego">
+        <div id="encabezado">
+            <br>
+            <span id="pregunta">Aquí va la pregunta</span>
+            <br>
+        </div>
+
+        <!-- Contenedor de imágenes y opciones -->
+        <div id="imagenes-y-opciones-container">
+            <!-- Imagen izquierda -->
+            <img id="imagen-izquierda" class="quiz-image" src="" alt="Imagen Izquierda" >
+            
+            <!-- Opciones en el centro -->
+            <div id="opciones-container">
+                <!-- Opciones se cargan dinámicamente aquí -->
+            </div>
+
+            <!-- Imagen derecha -->
+            <img id="imagen-derecha" class="quiz-image" src="" alt="Imagen Derecha" >
+        </div>
+
         <br>
-        <span id="pregunta">Aquí va la pregunta</span>
-        <br>
+
+        <div id="icon-container">
+            <a id="homeLink" href="../index.html">
+                <img id="inicio" src="../IMG/Inicio.png" alt="Home">
+            </a>
+            <img id="volume-control" src="../IMG/Volumen.png" alt="Mute/Unmute">
+        </div>
     </div>
-    <div id="opciones-container"></div> <!-- Contenedor para las opciones -->
-    <br>
-    <div id="icon-container">
-        <a id="homeLink" href="../index.html">
-            <img id="inicio" src="../IMG/Inicio.png" alt="Home">
-        </a>
-        <img id="volume-control" src="../IMG/Volumen.png" alt="Mute/Unmute">
-    </div>
-</div>
 </body>
 </html>

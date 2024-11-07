@@ -8,7 +8,9 @@
         "B) Apagar los equipos como: celular, televisor, computador.",
         "C) Dejar el televisor prendido hasta quedarnos dormidos."
       ],
-      "respuesta": "D) A y B son correctas."
+      "respuesta": "D) A y B son correctas.",
+      imagenIzquierda: "../IMG/M5P1-I.PNG",
+       imagenDerecha: "../IMG/M5P1-D.PNG"
     },
     {
       "pregunta": "2. Estar relajado ayuda a tener mayor concentración y tranquilidad, lo que a su vez contribuye a mi salud mental. Para conseguir esto debo:",
@@ -17,7 +19,9 @@
         "B) Realizar actividades que me generen satisfacción, aprender a manejar mis emociones.",
         "D) Solo la opción B es correcta."
       ],
-      "respuesta": "C) Todas las anteriores."
+      "respuesta": "C) Todas las anteriores.",
+      imagenIzquierda: "../IMG/M5P2-I.PNG",
+       imagenDerecha: "../IMG/M5P2-D.PNG"
     },
     {
       "pregunta": "3. Jugar con mis amigos ayuda a mi salud mental porque:",
@@ -26,14 +30,18 @@
         "B) Aprendo cada día, Puedo reír y divertirme.",
         "C) Ninguna de las anteriores.",
       ],
-      "respuesta": "D) A y B son correctas."
+      "respuesta": "D) A y B son correctas.",
+      imagenIzquierda: "../IMG/M5P3-I.PNG",
+       imagenDerecha: "../IMG/M5P3-D.PNG"
     },
     {
       "pregunta": "4. Expresar mis emociones es bueno para tener una buena salud mental:",
       "distractores": [
         "B) Falso."
       ], 
-      "respuesta":  "A) Verdadero."
+      "respuesta":  "A) Verdadero.",
+      imagenIzquierda: "../IMG/M5P4-I.PNG",
+       imagenDerecha: "../IMG/M5P4-D.PNG"
     },
     {
       "pregunta": "5. ¿Si algo me causa enojo, nunca debo decir nada?",
@@ -42,7 +50,9 @@
         "C) Es mejor hablar inmediatamente, así sea gritando y de manera alterada.",
         "D) Todas las anteriores."
       ],
-      "respuesta": "A) No, porque el enojo es una emoción normal y debo manifestarla de manera adecuada y cuando esté más tranquilo."
+      "respuesta": "A) No, porque el enojo es una emoción normal y debo manifestarla de manera adecuada y cuando esté más tranquilo.",
+      imagenIzquierda: "../IMG/M5P5-I.PNG",
+       imagenDerecha: "../IMG/M5P5-D.PNG"
     },
     {
       "pregunta": "6. ¿Qué debemos hacer para cuidar nuestra salud mental?",
@@ -52,7 +62,9 @@
         "C) Uso prolongado de redes sociales o plataformas digitales.",
         "D) Realiza actividad física, mínimo 150 minutos diarios."
       ],
-      "respuesta": "E) A, B y D son correctas."
+      "respuesta": "E) A, B y D son correctas.",
+      imagenIzquierda: "../IMG/M5P6-I.PNG",
+       imagenDerecha: "../IMG/M5P6-D.PNG"
     },
     {
       "pregunta": "7. ¿Cómo podemos evitar el estrés?",
@@ -62,7 +74,9 @@
         "C) Elige una forma para canalizar tus emociones: pintura, dibujo, escritura, deporte, música, meditación u oración.",
         "D) Realiza actividades recreativas o de esparcimiento con tus amigos."
       ],
-      "respuesta": "E) Todas las anteriores."
+      "respuesta": "E) Todas las anteriores.",
+      imagenIzquierda: "../IMG/M5P7-I.PNG",
+       imagenDerecha: "../IMG/M5P7-D.PNG"
     },
     {
       "pregunta": "8. ¿Cómo podemos afrontar una crisis emocional?",
@@ -71,7 +85,9 @@
         "B) Mantenerse en contacto con un apoyo emocional, adulto confianza o profesional en salud mental.",
         "C) Identifica la situación que generó la crisis para trabajar en ello."
       ],
-      "respuesta": "D) Todas las anteriores."
+      "respuesta": "D) Todas las anteriores.",
+      imagenIzquierda: "../IMG/M5P8-I.PNG",
+       imagenDerecha: "../IMG/M5P8-D.PNG"
     },
     {
       "pregunta": "9. ¿Qué debo hacer para mejorar mis hábitos de sueño?",
@@ -82,7 +98,9 @@
         "D) Utiliza una prenda cómoda o de tu preferencia para dormir.",
         "E) Evita utilizar aparatos tecnológicos previo a la hora de dormir."
       ],
-      "respuesta": "F) Todas las anteriores."
+      "respuesta": "F) Todas las anteriores.",
+      imagenIzquierda: "../IMG/M5P9-I.PNG",
+       imagenDerecha: "../IMG/M5P9-D.PNG"
     }
   ];
 

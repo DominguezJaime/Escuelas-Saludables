@@ -8,6 +8,8 @@
         "C) Barrer y cargar objetos pesados.", 
         "D)	Ver televisión y jugar en el celular."],
       respuesta: "B) Jugar, descansar, pasear y realizar actividad física.",
+       imagenIzquierda: "../IMG/M1P1-I.PNG",
+        imagenDerecha: "../IMG/M1P1-D.PNG"
     },
     {
       pregunta: "2.	Qué acciones corresponden a nuestras obligaciones o deberes:",
@@ -17,6 +19,8 @@
         "D) Trabajar."
       ],
       respuesta: "B) Estudiar y ayudar en las actividades del hogar.",
+      imagenIzquierda: "../IMG/M1P2-I.PNG",
+        imagenDerecha: "../IMG/M1P2-D.PNG"
     },
     {
       pregunta: "3.	Por qué es importante el manejo del tiempo libre:",
@@ -26,26 +30,34 @@
         "C) Promueve el proceso de socialización y salir de la rutina."
       ],
       respuesta: "D) Todas las anteriores son correctas",
+      imagenIzquierda: "../IMG/M1P3-I.PNG",
+        imagenDerecha: "../IMG/M1P3-D.PNG"
     },
     {
       pregunta: "4. El uso de dispositivos electrónicos influye negativamente en el aprovechamiento del tiempo libre:",
       distractores: [
         "B) Falso."
       ],
-      respuesta: "A) Verdadero."
+      respuesta: "A) Verdadero.",
+      imagenIzquierda: "../IMG/M1P4-I.PNG",
+        imagenDerecha: "../IMG/M1P4-D.PNG"
     },
     {
       pregunta: "5. El buen manejo del tiempo libre permite el desarrollo de nuevas habilidades:",
       distractores: ["B) Falso."
       ],
-      respuesta: "A) Verdadero."
+      respuesta: "A) Verdadero.",
+      imagenIzquierda: "../IMG/M1P5-I.PNG",
+        imagenDerecha: "../IMG/M1P5-D.PNG"
     },
     {
       pregunta: "6. La mejor forma de socializar, interactuar y conocer personas es a través de las redes sociales:",
       distractores: [
         "A) Verdadero."
       ],
-      respuesta: "B) Falso."
+      respuesta: "B) Falso.",
+      imagenIzquierda: "../IMG/M1P6-I.PNG",
+        imagenDerecha: "../IMG/M1P6-D.PNG"
     },
     {
       pregunta: "7. ¿Qué crees que puede pasar si te mantienes mucho tiempo usando dispositivos electrónicos?",
@@ -54,7 +66,9 @@
         "B) Se pierden momentos importantes de interacción.", 
         "C) Puede afectar tu bienestar emocional y tu desarrollo psicosocial.", 
       ],
-      respuesta: "D) Todas las anteriores."
+      respuesta: "D) Todas las anteriores.",
+      imagenIzquierda: "../IMG/M1P7-I.PNG",
+        imagenDerecha: "../IMG/M1P7-D.PNG"
     },
     {
       pregunta: "8. ¿Cuáles son las consecuencias del uso excesivo del celular?",
@@ -63,14 +77,18 @@
         "B) Tensiones en el cuello provocadas por mala postura a la hora de mirar la pantalla del celular.", 
         "C) Puede provocar una disminución en la calidad del sueño e insomnio, provocado por la luminosidad de la pantalla.", 
       ],
-      respuesta: "D) Todas las anteriores."
+      respuesta: "D) Todas las anteriores.",
+      imagenIzquierda: "../IMG/M1P8-I.PNG",
+        imagenDerecha: "../IMG/M1P8-D.PNG"
     },
     {
       pregunta: "9. Lee detenidamente el siguiente párrafo y responde si es Falso o Verdadero: El uso de teléfonos móviles durante 2 horas por día para servicios de redes sociales y chats en línea se asocia con un mayor riesgo de depresión. El uso excesivo de teléfonos móviles puede estar relacionado con hábitos de sueño poco saludables e insomnio.",
       distractores: [ 
         "B) Falso."
       ],
-      respuesta: "A) Verdadero."
+      respuesta: "A) Verdadero.",
+      imagenIzquierda: "../IMG/M1P9-I.PNG",
+        imagenDerecha: "../IMG/M1P9-D.PNG"
     },
   ];
 
