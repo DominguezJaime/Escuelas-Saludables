@@ -9,8 +9,8 @@
         "C) Dejar el televisor prendido hasta quedarnos dormidos."
       ],
       "respuesta": "D) A y B son correctas.",
-      imagenIzquierda: "../IMG/M5P1-I.PNG",
-       imagenDerecha: "../IMG/M5P1-D.PNG"
+      imagenIzquierda: "../IMG/M5P1-I.png",
+       imagenDerecha: "../IMG/M5P1-D.png"
     },
     {
       "pregunta": "2. Estar relajado ayuda a tener mayor concentración y tranquilidad, lo que a su vez contribuye a mi salud mental. Para conseguir esto debo:",
@@ -20,8 +20,8 @@
         "D) Solo la opción B es correcta."
       ],
       "respuesta": "C) Todas las anteriores.",
-      imagenIzquierda: "../IMG/M5P2-I.PNG",
-       imagenDerecha: "../IMG/M5P2-D.PNG"
+      imagenIzquierda: "../IMG/M5P2-I.png",
+       imagenDerecha: "../IMG/M5P2-D.png"
     },
     {
       "pregunta": "3. Jugar con mis amigos ayuda a mi salud mental porque:",
@@ -31,8 +31,8 @@
         "C) Ninguna de las anteriores.",
       ],
       "respuesta": "D) A y B son correctas.",
-      imagenIzquierda: "../IMG/M5P3-I.PNG",
-       imagenDerecha: "../IMG/M5P3-D.PNG"
+      imagenIzquierda: "../IMG/M5P3-I.png",
+       imagenDerecha: "../IMG/M5P3-D.png"
     },
     {
       "pregunta": "4. Expresar mis emociones es bueno para tener una buena salud mental:",
@@ -40,8 +40,8 @@
         "B) Falso."
       ], 
       "respuesta":  "A) Verdadero.",
-      imagenIzquierda: "../IMG/M5P4-I.PNG",
-       imagenDerecha: "../IMG/M5P4-D.PNG"
+      imagenIzquierda: "../IMG/M5P4-I.png",
+       imagenDerecha: "../IMG/M5P4-D.png"
     },
     {
       "pregunta": "5. ¿Si algo me causa enojo, nunca debo decir nada?",
@@ -51,8 +51,8 @@
         "D) Todas las anteriores."
       ],
       "respuesta": "A) No, porque el enojo es una emoción normal y debo manifestarla de manera adecuada y cuando esté más tranquilo.",
-      imagenIzquierda: "../IMG/M5P5-I.PNG",
-       imagenDerecha: "../IMG/M5P5-D.PNG"
+      imagenIzquierda: "../IMG/M5P5-I.png",
+       imagenDerecha: "../IMG/M5P5-D.png"
     },
     {
       "pregunta": "6. ¿Qué debemos hacer para cuidar nuestra salud mental?",
@@ -63,8 +63,8 @@
         "D) Realiza actividad física, mínimo 150 minutos diarios."
       ],
       "respuesta": "E) A, B y D son correctas.",
-      imagenIzquierda: "../IMG/M5P6-I.PNG",
-       imagenDerecha: "../IMG/M5P6-D.PNG"
+      imagenIzquierda: "../IMG/M5P6-I.png",
+       imagenDerecha: "../IMG/M5P6-D.png"
     },
     {
       "pregunta": "7. ¿Cómo podemos evitar el estrés?",
@@ -75,8 +75,8 @@
         "D) Realiza actividades recreativas o de esparcimiento con tus amigos."
       ],
       "respuesta": "E) Todas las anteriores.",
-      imagenIzquierda: "../IMG/M5P7-I.PNG",
-       imagenDerecha: "../IMG/M5P7-D.PNG"
+      imagenIzquierda: "../IMG/M5P7-I.png",
+       imagenDerecha: "../IMG/M5P7-D.png"
     },
     {
       "pregunta": "8. ¿Cómo podemos afrontar una crisis emocional?",
@@ -86,8 +86,8 @@
         "C) Identifica la situación que generó la crisis para trabajar en ello."
       ],
       "respuesta": "D) Todas las anteriores.",
-      imagenIzquierda: "../IMG/M5P8-I.PNG",
-       imagenDerecha: "../IMG/M5P8-D.PNG"
+      imagenIzquierda: "../IMG/M5P8-I.png",
+       imagenDerecha: "../IMG/M5P8-D.png"
     },
     {
       "pregunta": "9. ¿Qué debo hacer para mejorar mis hábitos de sueño?",
@@ -99,9 +99,10 @@
         "E) Evita utilizar aparatos tecnológicos previo a la hora de dormir."
       ],
       "respuesta": "F) Todas las anteriores.",
-      imagenIzquierda: "../IMG/M5P9-I.PNG",
-       imagenDerecha: "../IMG/M5P9-D.PNG"
+      imagenIzquierda: "../IMG/M5P9-I.png",
+       imagenDerecha: "../IMG/M5P9-D.png"
     }
   ];
 
   
+
