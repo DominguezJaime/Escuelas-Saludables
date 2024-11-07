@@ -8,8 +8,8 @@
         "C) Barrer y cargar objetos pesados.", 
         "D)	Ver televisión y jugar en el celular."],
       respuesta: "B) Jugar, descansar, pasear y realizar actividad física.",
-       imagenIzquierda: "../IMG/M1P1-I.PNG",
-        imagenDerecha: "../IMG/M1P1-D.PNG"
+       imagenIzquierda: "../IMG/M1P1-I.png",
+        imagenDerecha: "../IMG/M1P1-D.png"
     },
     {
       pregunta: "2.	Qué acciones corresponden a nuestras obligaciones o deberes:",
