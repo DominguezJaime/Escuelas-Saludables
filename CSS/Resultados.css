@@ -6,11 +6,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Cambiado de height a min-height */
-    background-image: url('../IMG/Index.jpg'); /* Asegúrate de que la ruta sea correcta */
+    min-height: 100vh;
+    background-image: url('../IMG/Index.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Asegura que el fondo se mantenga fijo */
+    background-attachment: scroll; /* Cambiado a scroll */
 }
 
 header {
@@ -21,10 +21,10 @@ header {
 #logo {
     width: 90%;
     height: auto;
-    max-width: 700px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
+    max-width: 700px;
     display: block;
     margin: 0 auto;
-  }
+}
 
 #felicitaciones {
     background-color: rgba(255, 255, 255, 0.9);
@@ -33,30 +33,29 @@ header {
     text-align: center;
     width: 80%;
     max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Centra el contenedor */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
 #mensaje-jugador {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: green; /* Cambiar el color a verde */
-    text-shadow: 0 0 10px #ffffff; /* Añadir un reflejo */
+    color: green;
 }
 
 #resultados {
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.5); /* Añadir transparencia */
+    background-color: #f9f9f9;
     border-radius: 10px;
     padding: 20px;
     width: 90%;
-    max-width: 600px; /* Asegura que no sea más grande que el contenedor de felicitaciones */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Centra el contenedor */
+    max-width: 600px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
 .resultado-modulo {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
