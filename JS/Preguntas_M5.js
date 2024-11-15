@@ -27,7 +27,7 @@
       "pregunta": "3. Jugar con mis amigos ayuda a mi salud mental porque:",
       "distractores": [
         "A) Comparto con mis amigos y compañeros.",
-        "B) Aprendo cada día, Puedo reír y divertirme.",
+        "B) Aprendo cada día, puedo reír y divertirme.",
         "C) Ninguna de las anteriores.",
       ],
       "respuesta": "D) A y B son correctas.",
@@ -82,7 +82,7 @@
       "pregunta": "8. ¿Cómo podemos afrontar una crisis emocional?",
       "distractores": [
         "A) Utiliza la respiración diafragmática, inhalar el aire por la nariz, sostenerlo un segundo y exhalar por la boca.",
-        "B) Mantenerse en contacto con un apoyo emocional, adulto confianza o profesional en salud mental.",
+        "B) Mantenerse en contacto con un apoyo emocional, adulto de confianza o profesional en salud mental.",
         "C) Identifica la situación que generó la crisis para trabajar en ello."
       ],
       "respuesta": "D) Todas las anteriores.",

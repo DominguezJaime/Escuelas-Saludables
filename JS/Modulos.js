@@ -4,22 +4,6 @@ let intentos = 0;
 let moduloNumero = null; // Definir moduloNumero en un ámbito más amplio
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    var volumeControl = document.getElementById('volume-control');
-    var backgroundAudio = document.getElementById('background-audio');
-
-    backgroundAudio.muted = false;
-
-    if (backgroundAudio.muted) {
-        volumeControl.classList.add('muted');
-    } else {
-        volumeControl.classList.remove('muted');
-    }
-
-    volumeControl.addEventListener('click', () => {
-        backgroundAudio.muted = !backgroundAudio.muted;
-        volumeControl.classList.toggle('muted');
-    });
-
     moduloNumero = new URLSearchParams(window.location.search).get('modulo'); // Asignar valor a moduloNumero
     cargarPregunta(INDEX_PREGUNTA);
 });

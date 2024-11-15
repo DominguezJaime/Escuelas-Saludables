@@ -56,13 +56,13 @@ h1 {
   position: relative;
   width: 100%;
   margin: 50px 0;
-  min-height: 350px; /* Ajuste de altura mínima general */
+  min-height: 200px; /* Ajuste de altura mínima general */
 }
 
 #imagen-izquierda,
 #imagen-derecha {
-  width: 200px; /* Ancho fijo para ambas imágenes */
-  height: 350px; /* Altura fija para ambas imágenes */
+  min-width: 150px; /* Ancho fijo para ambas imágenes */
+  height: 360px; /* Altura fija para ambas imágenes */
   border-radius: 8px;
   object-fit: cover; /* Ajusta para que la imagen llene el contenedor */
   position: relative;

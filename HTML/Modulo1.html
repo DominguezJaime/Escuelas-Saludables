@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Escuelas Saludables Módulo 1</title>
+    <title>Escuelas Saludables Modulo 5</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +18,8 @@
     <audio id="correct-sound" src="../Audio/Correcta.mp3"></audio>
     <audio id="incorrect-sound" src="../Audio/Incorrecta.mp3"></audio>
     <audio id="final-score-sound" src="../Audio/Final.mp3"></audio>
-    <audio id="background-audio" src="../Audio/Modulo.mp3" autoplay loop muted></audio>
-
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-            document.getElementById('background-audio').muted = false;
             const moduloNumero = 1;
 
             localStorage.setItem('moduloNumero', moduloNumero);
@@ -60,8 +57,6 @@
         <div id="icon-container">
             <a id="homeLink" href="../index.html">
                 <img id="inicio" src="../IMG/Inicio.png" alt="Home">
-            </a>
-            <img id="volume-control" src="../IMG/Volumen.png" alt="Mute/Unmute">
         </div>
     </div>
 </body>

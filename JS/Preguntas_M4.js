@@ -52,7 +52,7 @@
         "C) Arroz + salchicha + papa frita + jugo de caja.",
         "D) Chicharrón + arroz + agua de panela."
       ],
-      "respuesta": "B) Frijoles + arroz + huevo + tajada de tomate + agua.",
+      "respuesta": "B) Fríjoles + arroz + huevo + tajada de tomate + agua.",
       imagenIzquierda: "../IMG/M4P5-I.png",
        imagenDerecha: "../IMG/M4P5-D.png"
     },

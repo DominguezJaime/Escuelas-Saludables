@@ -60,7 +60,7 @@
       "pregunta": "6. ¿Cuál de los siguientes puntos crees que es el primer paso para resolver un conflicto?",
       "distractores": [
         "A) Buscar la venganza.",
-        "B) No hablar nunca más con la otra persona que se tiene el conflicto.",
+        "B) No hablar nunca mas con la otra persona con la que se tiene el conflicto.",
         "D) Buscar soluciones."
       ],
       "respuesta": "C) Identificar el problema.",
