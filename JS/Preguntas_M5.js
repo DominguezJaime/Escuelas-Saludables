@@ -60,7 +60,7 @@
         "A) Establecer rutinas diarias como: Horarios para actividades recreativas, tareas en casa.",
         "B) Comunícate y comparte con tus familiares, adultos de confianza, amigos y pares.",
         "C) Uso prolongado de redes sociales o plataformas digitales.",
-        "D) Realiza actividad física, mínimo 150 minutos diarios."
+        "D) Realiza actividad física, mínimo 150 minutos semanales."
       ],
       "respuesta": "E) A, B y D son correctas.",
       imagenIzquierda: "../IMG/M5P6-I.png",

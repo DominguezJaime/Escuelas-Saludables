@@ -46,6 +46,8 @@ async function seleccionarOpcion(index) {
             title: "Respuesta correcta",
             text: "La respuesta ha sido correcta",
             icon: "success",
+            timer: 1500,
+            showConfirmButton: false
         });
         puntaje++;
         intentos = 0;
@@ -59,12 +61,16 @@ async function seleccionarOpcion(index) {
                 title: "Respuesta Incorrecta",
                 text: "Inténtalo de nuevo",
                 icon: "error",
+                timer: 1500,
+                showConfirmButton: false
             });
         } else {
             await Swal.fire({
                 title: "Respuesta Incorrecta",
                 html: `La respuesta correcta es ${objetoPregunta.respuesta}`,
                 icon: "error",
+                timer: 3000,
+                showConfirmButton: false
             });
             intentos = 0;
             INDEX_PREGUNTA++;
@@ -74,18 +80,32 @@ async function seleccionarOpcion(index) {
     if (INDEX_PREGUNTA < baseDePreguntas.length) {
         cargarPregunta(INDEX_PREGUNTA);
     } else {
-        var finalScoreSound = document.getElementById('final-score-sound');
-        finalScoreSound.play();
-
         let porcentaje = (puntaje / baseDePreguntas.length) * 100;
-        let mensaje = porcentaje >= 80 ? "¡Felicidades! Has aprobado." : "Puedes intentarlo de nuevo.";
+        let mensaje = porcentaje >= 80 ? "¡Felicidades! Has aprobado." : "Debes intentarlo de nuevo.";
+        
+        if (porcentaje >= 80) {
+            var finalScoreSound = document.getElementById('final-score-sound');
+            finalScoreSound.play();
+        } else {
+            var retrySound = document.getElementById('retry-sound');
+            retrySound.play();
+        }
+
         await Swal.fire({
             title: "Juego terminado",
             text: `Tu puntaje fue de: ${puntaje}/${baseDePreguntas.length} (${porcentaje.toFixed(2)}%). ${mensaje}`,
         }).then(() => {
             guardarProgreso(moduloNumero, puntaje, baseDePreguntas.length);
-            // Redirigir a index.html
-            window.location.href = `../index.html?puntaje=${puntaje}&total=${baseDePreguntas.length}&modulo=${moduloNumero}`;
+            if (porcentaje < 80) {
+                // Reiniciar el módulo
+                INDEX_PREGUNTA = 0;
+                puntaje = 0;
+                intentos = 0;
+                cargarPregunta(INDEX_PREGUNTA);
+            } else {
+                // Redirigir a index.html
+                window.location.href = `../index.html?puntaje=${puntaje}&total=${baseDePreguntas.length}&modulo=${moduloNumero}`;
+            }
         });
     }
 }

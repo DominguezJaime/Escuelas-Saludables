@@ -35,13 +35,13 @@
        imagenDerecha: "../IMG/M3P3-D.png"
     },
     {
-      "pregunta": "4. ¿Cuántos litros de agua debe consumir una persona al día?",
+      "pregunta": "4. ¿Cuantos litros de agua al día puede utilizar una persona para atender sus necesidades de consumo y de higiene de manera aproximada?",
       "distractores": [
         "A) 20 litros.",
-        "B) 100 litros.",
+        "B) 5 litros.",
         "D) 50 litros."
       ],
-      "respuesta": "C) 5 litros.",
+      "respuesta": "C) 100 litros.",
       imagenIzquierda: "../IMG/M3P4-I.png",
        imagenDerecha: "../IMG/M3P4-D.png"
     },
@@ -104,10 +104,10 @@
       "pregunta": "10. Si evidencio que los manipuladores de alimentos en la tienda escolar tienen joyas, esmalte en las uñas y no tienen tapabocas ni gorro, ¿qué puedo hacer?",
       "distractores": [
         "A) Hacer la sugerencia de usar los elementos de higiene.",
-        "B) Recomendar la limpieza de manos.",
+        "B) Recomendar el no uso de joyas.",
         "C) No comprar en la tienda y llevar comida saludable de casa."
       ],
-      "respuesta": "D) Todas las anteriores .",
+      "respuesta": "D) Todas las anteriores.",
       imagenIzquierda: "../IMG/M3P10-I.png",
        imagenDerecha: "../IMG/M3P10-D.png"
     },
@@ -118,7 +118,7 @@
         "B) Comprar frutas.",
         "C) No consumir alimentos con exceso de sal, grasas o azúcar."
       ],
-      "respuesta": "D) Todas las anteriores .",
+      "respuesta": "D) Todas las anteriores.",
       imagenIzquierda: "../IMG/M3P11-I.png",
        imagenDerecha: "../IMG/M3P11-D.png"
     }
