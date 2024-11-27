@@ -12,7 +12,7 @@
         imagenDerecha: "../IMG/M1P1-D.png"
     },
     {
-      pregunta: "2. Qué acciones corresponden a nuestras obligaciones o deberes:",
+      pregunta: "2. ¿Qué acciones corresponden a nuestras obligaciones o deberes?",
       distractores: [
         "A) Dormir.", 
         "C) Escuchar música.", 
@@ -23,7 +23,7 @@
         imagenDerecha: "../IMG/M1P2-D.png"
     },
     {
-      pregunta: "3. Por qué es importante el manejo del tiempo libre:",
+      pregunta: "3. ¿Por qué es importante el manejo del tiempo libre?",
       distractores: [
         "A) Favorece la formación de hábitos saludables.", 
         "B) Mejora nuestras rutinas.", 
@@ -34,7 +34,7 @@
         imagenDerecha: "../IMG/M1P3-D.png"
     },
     {
-      pregunta: "4. El uso de dispositivos electrónicos influye negativamente en el aprovechamiento del tiempo libre:",
+      pregunta: "4. ¿El uso de dispositivos electrónicos influye negativamente en el aprovechamiento del tiempo libre?",
       distractores: [
         "B) Falso."
       ],
@@ -43,7 +43,7 @@
         imagenDerecha: "../IMG/M1P4-D.png"
     },
     {
-      pregunta: "5. El buen manejo del tiempo libre permite el desarrollo de nuevas habilidades:",
+      pregunta: "5. ¿El buen manejo del tiempo libre permite el desarrollo de nuevas habilidades?",
       distractores: ["B) Falso."
       ],
       respuesta: "A) Verdadero.",
@@ -51,7 +51,7 @@
         imagenDerecha: "../IMG/M1P5-D.png"
     },
     {
-      pregunta: "6. La mejor forma de socializar, interactuar y conocer personas es a través de las redes sociales:",
+      pregunta: "6. ¿La mejor forma de socializar, interactuar y conocer personas es a través de las redes sociales?",
       distractores: [
         "A) Verdadero."
       ],
@@ -82,7 +82,7 @@
         imagenDerecha: "../IMG/M1P8-D.png"
     },
     {
-      pregunta: "9. Lee detenidamente el siguiente párrafo y responde si es Falso o Verdadero: El uso de teléfonos móviles durante 2 horas por día para servicios de redes sociales y chats en línea se asocia con un mayor riesgo de depresión. El uso excesivo de teléfonos móviles puede estar relacionado con hábitos de sueño poco saludables e insomnio.",
+      pregunta: "9. Lee detenidamente el siguiente párrafo y responde si es Falso o Verdadero: ¿El uso de teléfonos móviles durante 2 horas por día para servicios de redes sociales y chats en línea se asocia con un mayor riesgo de depresión. El uso excesivo de teléfonos móviles puede estar relacionado con hábitos de sueño poco saludables e insomnio?",
       distractores: [ 
         "B) Falso."
       ],

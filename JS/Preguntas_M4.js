@@ -2,7 +2,7 @@
   
   let baseDePreguntas = [
     {
-      "pregunta": "1. Una lonchera saludable debe llevar:",
+      "pregunta": "1. ¿Una lonchera saludable debe llevar?",
       "distractores": [
         "A) Una bebida láctea y una harina.",
         "B) Una proteína y una fruta.",
@@ -79,7 +79,7 @@
        imagenDerecha: "../IMG/M4P7-D.png"
     },
     {
-      "pregunta": "8. El consumo de una alimentación no saludable puede ocasionar:",
+      "pregunta": "8. ¿El consumo de una alimentación no saludable puede ocasionar?",
       "distractores": [
         "A) Obesidad.",
         "B) Cáncer.",

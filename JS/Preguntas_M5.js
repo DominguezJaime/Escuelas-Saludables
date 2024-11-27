@@ -13,7 +13,7 @@
        imagenDerecha: "../IMG/M5P1-D.png"
     },
     {
-      "pregunta": "2. Estar relajado ayuda a tener mayor concentración y tranquilidad, lo que a su vez contribuye a mi salud mental. Para conseguir esto debo:",
+      "pregunta": "2. Estar relajado ayuda a tener mayor concentración y tranquilidad, lo que a su vez contribuye a mi salud mental. ¿Para conseguir esto debo?",
       "distractores": [
         "A) Aprender a manejar la respiración en momentos de estrés.",
         "B) Realizar actividades que me generen satisfacción, aprender a manejar mis emociones.",
@@ -35,7 +35,7 @@
        imagenDerecha: "../IMG/M5P3-D.png"
     },
     {
-      "pregunta": "4. Expresar mis emociones es bueno para tener una buena salud mental:",
+      "pregunta": "4. ¿Expresar mis emociones es bueno para tener una buena salud mental?",
       "distractores": [
         "B) Falso."
       ], 

@@ -35,7 +35,7 @@
        imagenDerecha: "../IMG/M3P3-D.png"
     },
     {
-      "pregunta": "4. ¿Cuantos litros de agua al día puede utilizar una persona para atender sus necesidades de consumo y de higiene de manera aproximada?",
+      "pregunta": "4. ¿Cuántos litros de agua al día puede utilizar una persona para atender sus necesidades de consumo y de higiene de manera aproximada?",
       "distractores": [
         "A) 20 litros.",
         "B) 5 litros.",
@@ -101,7 +101,7 @@
        imagenDerecha: "../IMG/M3P9-D.png"
     },
     {
-      "pregunta": "10. Si evidencio que los manipuladores de alimentos en la tienda escolar tienen joyas, esmalte en las uñas y no tienen tapabocas ni gorro, ¿qué puedo hacer?",
+      "pregunta": "10. Si evidencio que los manipuladores de alimentos en la tienda escolar tienen joyas, esmalte en las uñas y no tienen tapabocas ni gorro, ¿Qué puedo hacer?",
       "distractores": [
         "A) Hacer la sugerencia de usar los elementos de higiene.",
         "B) Recomendar el no uso de joyas.",
@@ -112,7 +112,7 @@
        imagenDerecha: "../IMG/M3P10-D.png"
     },
     {
-      "pregunta": "11. Si en mi tienda escolar venden solo paquetes y alimentos con muchas salsas, ¿qué debo hacer?",
+      "pregunta": "11. Si en mi tienda escolar venden solo paquetes y alimentos con muchas salsas, ¿Qué debo hacer?",
       "distractores": [
         "A) Solicitar al tendero incluir alimentos saludables.",
         "B) Comprar frutas.",
