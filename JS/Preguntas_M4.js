@@ -110,6 +110,17 @@
       "respuesta": "D) Todas las anteriores.",
       imagenIzquierda: "../IMG/M4P10-I.png",
        imagenDerecha: "../IMG/M4P10-D.png"
+    },
+    {
+      "pregunta": "11. Si en mi tienda escolar venden solo paquetes y alimentos con muchas salsas, ¿Qué debo hacer?",
+      "distractores": [
+        "A) Solicitar al tendero incluir alimentos saludables.",
+        "B) Comprar frutas.",
+        "C) No consumir alimentos con exceso de sal, grasas o azúcar."
+      ],
+      "respuesta": "D) Todas las anteriores.",
+      imagenIzquierda: "../IMG/M4P11-I.png",
+       imagenDerecha: "../IMG/M4P11-D.png"
     }
   ];
 
